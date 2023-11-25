@@ -28,3 +28,48 @@ Response (Resposta):
 
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
 
+
+# Parametros
+
+Path Params (Parâmetros de Caminho):
+> São usados para identificar e acessar recursos específicos na URL. Inseridos diretamente no caminho, eles são obrigatórios e normalmente representam valores únicos, como IDs.
+
+Query Params (Parâmetros de Consulta):
+> Permitem filtrar ou personalizar resultados, adicionando informações à URL após o símbolo "?". São opcionais e frequentemente usados para configurações, filtros ou informações adicionais.
+
+Header Params (Parâmetros de Cabeçalho):
+> Transportam informações adicionais no cabeçalho da requisição. São úteis para autenticação (como tokens) e metadados que não fazem parte da URL ou do corpo da requisição.
+
+Body Params (Parâmetros no Corpo da Requisição):
+> Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
+
+
+# HTTP Status Codes mais usados.
+
+
+> Os HTTP Status Codes, ou códigos de status HTTP, são indicadores numéricos retornados como parte das respostas de requisições HTTP, fornecendo informações sobre o resultado da operação realizada. Divididos em cinco classes, esses códigos começam com os dígitos 1 a 5, onde os 2xx indicam sucesso, os 3xx indicam redirecionamento, os 4xx sinalizam erros do cliente, e os 5xx indicam erros do servidor. Esses códigos desempenham um papel crucial em comunicações cliente-servidor, permitindo uma compreensão rápida e padronizada do estado da requisição, o que facilita o diagnóstico de problemas e a implementação de tratamentos adequados no desenvolvimento de aplicações web.
+
+>  - 1xx - Informativos:
+>    - 100 Continue: Indica que o servidor recebeu os cabeçalhos da requisição e o cliente deve prosseguir com o corpo da requisição.
+
+>  - 2xx - Sucesso:
+>    -  200 OK: A requisição foi bem-sucedida.
+>    - 201 Created: A requisição resultou na criação de um novo recurso.
+>    - 204 No Content: A requisição foi bem-sucedida, mas não há conteúdo para retornar.
+
+>  - 3xx - Redirecionamento:
+>    - 301 Moved Permanently: O recurso solicitado foi movido permanentemente para uma nova localização.
+>    - 302 Found: O recurso solicitado foi movido temporariamente para uma nova localização.
+>    - 304 Not Modified: Indica que o recurso não foi modificado desde a última requisição.
+
+>  - 4xx - Erro do Cliente:
+>    - 400 Bad Request: A requisição não pode ser processada devido a uma sintaxe inválida.
+>    - 401 Unauthorized: O cliente deve se autenticar para obter acesso.
+>    - 403 Forbidden: O servidor entende a requisição, mas o acesso é proibido.
+>    - 404 Not Found: O recurso solicitado não foi encontrado.
+>    - 409 Conflict: A requisição não pode ser concluída devido a um conflito com o estado atual do recurso.
+
+>  - 5xx - Erro do Servidor:
+>    - 500 Internal Server Error: Indica um erro interno do servidor.
+>    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
+
