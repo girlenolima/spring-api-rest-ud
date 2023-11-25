@@ -100,3 +100,30 @@ Semântica de Atualização:
 > Operação Atômica:
 >    - As operações PATCH são consideradas atômicas, o que significa que a aplicação das modificações é tratada como uma única operação, garantindo consistência nos dados.
 
+
+# Modelo de maturidade de Richardson 
+
+> Os níveis de maturidade do REST, também conhecidos como Richardson Maturity Model ou Modelo de Maturidade de Richardson, foram propostos por Leonard Richardson em seu artigo "Maturity Heuristics for Building Scalable and Maintainable RESTful Services". Este modelo define quatro níveis de maturidade para a implementação de serviços RESTful. Vamos explorar cada nível:
+
+![maturidade](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/73423351-1415-4a4c-be57-bd5184b65591)
+
+
+Nível 0 - Serviços RESTful sem REST:
+> - Utiliza apenas um ponto de extremidade para todos os recursos.
+> - Geralmente usa apenas o verbo POST.
+> - Não segue os princípios fundamentais do REST.
+
+Nível 1 - Recursos Individuais:
+> - Introduz a ideia de recursos individuais identificáveis por URIs.
+> - Utiliza múltiplos pontos de extremidade (um por recurso).
+> - Adota diferentes verbos HTTP, mas sem muita semântica.
+
+Nível 2 - Utilização de Verbos HTTP:
+> - Usa adequadamente os verbos HTTP para diferentes operações.
+> - Utiliza GET para leitura, POST para criação, PUT para atualização, DELETE para exclusão.
+> - Usa URIs para identificar recursos de forma mais semântica.
+
+Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
+> - Introduz a ideia de HATEOAS, onde a representação de um recurso contém links para transições de estado possíveis.
+> - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
+
