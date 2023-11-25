@@ -127,3 +127,16 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > - Introduz a ideia de HATEOAS, onde a representação de um recurso contém links para transições de estado possíveis.
 > - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
 
+
+# Hateoas
+
+> HATEOAS significa Hypermedia as the Engine of Application State. É um princípio de design para APIs RESTful que afirma que a API deve fornecer todas as informações necessárias para o cliente navegar no estado da aplicação. Isso significa que a API deve retornar links para recursos relacionados em suas respostas. Isso permite que o cliente descubra a API sem ter que conhecer a estrutura completa da aplicação com antecedência.
+
+Benefícios do HATEOAS
+
+> - Desvinculação: O HATEOAS desvincula o cliente do servidor permitindo que o cliente descubra a API sem ter que conhecer a estrutura completa da aplicação com antecedência. Isso torna a API mais flexível e fácil de alterar.
+
+> - Descobribilidade: O HATEOAS torna a API mais explorável fornecendo links para recursos relacionados em suas respostas. Isso torna mais fácil para os clientes encontrarem os recursos de que precisam sem ter que conhecer a estrutura completa da API com antecedência.
+
+> - Facilidade de uso: O HATEOAS torna a API mais fácil de usar fornecendo uma maneira consistente para os clientes navegarem no estado da aplicação. Isso torna mais fácil para os desenvolvedores escrever clientes que consomem a API.
+
