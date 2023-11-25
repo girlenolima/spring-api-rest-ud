@@ -73,3 +73,19 @@ Body Params (Parâmetros no Corpo da Requisição):
 >    - 500 Internal Server Error: Indica um erro interno do servidor.
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 
+
+# Verbos HTTP
+
+Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.
+
+POST
+> O verbo POST é usado para criar um novo recurso. Por exemplo, se você quiser criar uma nova conta de usuário em um sistema, você faria uma solicitação POST para o endpoint da API responsável por criar contas de usuário. A resposta da solicitação POST seria o novo recurso criado, no caso, a nova conta de usuário.
+
+GET
+> O verbo GET é usado para recuperar um recurso existente. Por exemplo, se você quiser recuperar os dados de um usuário específico, você faria uma solicitação GET para o endpoint da API responsável por recuperar dados de usuários. A resposta da solicitação GET seria os dados do usuário solicitado.
+
+PUT
+> O verbo PUT é usado para atualizar um recurso existente. Por exemplo, se você quiser alterar a senha de um usuário, você faria uma solicitação PUT para o endpoint da API responsável por atualizar dados de usuários. A resposta da solicitação PUT seria o recurso atualizado, no caso, o usuário com a senha alterada.
+
+DELETE
+> O verbo DELETE é usado para excluir um recurso existente. Por exemplo, se você quiser excluir a conta de um usuário, você faria uma solicitação DELETE para o endpoint da API responsável por excluir contas de usuário. A resposta da solicitação DELETE seria um status HTTP 204 No Content, indicando que o recurso foi excluído com 
