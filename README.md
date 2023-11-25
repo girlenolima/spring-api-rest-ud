@@ -1,11 +1,13 @@
 # spring-api-rest-ud
 
-# Web Service 
+### Este projeto é um desafio pessoal de criar uma API RESTful utilizando Java, Spring e suas tecnologias. Aqui, você encontrará um resumo dos conceitos e tecnologias que serão utilizados no projeto. Inicialmente, este README será dividido em três partes: conceitos introdutórios, tecnologias utilizadas e implementação prática.
+
+### Web Service 
 > Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.
 
 > Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.
 
-# Rest 
+### Rest 
 > REST (Representational State Transfer) é uma arquitetura de software que define um conjunto de princípios e restrições para o design de serviços web. Diferentemente de protocolos como SOAP, REST não é um protocolo, mas um estilo arquitetônico baseado em padrões da web, como HTTP.REST é frequentemente utilizado em conjunto com o protocolo HTTP, aproveitando os métodos HTTP para operações CRUD (Create, Read, Update, Delete) e os códigos de status para indicar o resultado da operação. Essa abordagem simplificada e baseada em padrões torna o REST uma escolha popular para o desenvolvimento de serviços web, especialmente em contextos onde a simplicidade e a escalabilidade são prioridades.
 
 > - Representação: Os recursos são representados por entidades, que são objetos de dados que podem ser manipulados por operações.
@@ -15,7 +17,7 @@
 > - Segurança: Os recursos podem ser protegidos por meio de mecanismos de autenticação e autorização.
 > - Evolução: Os sistemas RESTful devem ser projetados de forma a serem facilmente evoluídos, sem afetar a funcionalidade ou a interoperabilidade.
 
-# Resquest e Response
+### Resquest e Response
 
 Request (Requisição):
 > Em um contexto de serviços web, uma requisição (ou request) é uma mensagem enviada por um cliente para solicitar a execução de uma operação específica em um servidor. Essa mensagem inclui informações como o método da requisição (como GET, POST, PUT ou DELETE), o URL do recurso desejado e, em casos de métodos que permitem o envio de dados, os parâmetros ou corpo da requisição. As requisições são a maneira pela qual os clientes interagem com os serviços web, solicitando ações ou informações específicas.
@@ -29,7 +31,7 @@ Response (Resposta):
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
 
 
-# Parametros
+### Parametros
 
 Path Params (Parâmetros de Caminho):
 > São usados para identificar e acessar recursos específicos na URL. Inseridos diretamente no caminho, eles são obrigatórios e normalmente representam valores únicos, como IDs.
@@ -44,7 +46,7 @@ Body Params (Parâmetros no Corpo da Requisição):
 > Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
 
 
-# HTTP Status Codes mais usados.
+### HTTP Status Codes mais usados.
 
 
 > Os HTTP Status Codes, ou códigos de status HTTP, são indicadores numéricos retornados como parte das respostas de requisições HTTP, fornecendo informações sobre o resultado da operação realizada. Divididos em cinco classes, esses códigos começam com os dígitos 1 a 5, onde os 2xx indicam sucesso, os 3xx indicam redirecionamento, os 4xx sinalizam erros do cliente, e os 5xx indicam erros do servidor. Esses códigos desempenham um papel crucial em comunicações cliente-servidor, permitindo uma compreensão rápida e padronizada do estado da requisição, o que facilita o diagnóstico de problemas e a implementação de tratamentos adequados no desenvolvimento de aplicações web.
@@ -74,7 +76,7 @@ Body Params (Parâmetros no Corpo da Requisição):
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 
 
-# Verbos HTTP mais comuns
+### Verbos HTTP mais comuns
 
 Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.
 
@@ -101,7 +103,7 @@ Semântica de Atualização:
 >    - As operações PATCH são consideradas atômicas, o que significa que a aplicação das modificações é tratada como uma única operação, garantindo consistência nos dados.
 
 
-# Modelo de maturidade de Richardson 
+### Modelo de maturidade de Richardson 
 
 > Os níveis de maturidade do REST, também conhecidos como Richardson Maturity Model ou Modelo de Maturidade de Richardson, foram propostos por Leonard Richardson em seu artigo "Maturity Heuristics for Building Scalable and Maintainable RESTful Services". Este modelo define quatro níveis de maturidade para a implementação de serviços RESTful. Vamos explorar cada nível:
 
@@ -128,7 +130,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
 
 
-# Hateoas
+### Hateoas
 
 > HATEOAS significa Hypermedia as the Engine of Application State. É um princípio de design para APIs RESTful que afirma que a API deve fornecer todas as informações necessárias para o cliente navegar no estado da aplicação. Isso significa que a API deve retornar links para recursos relacionados em suas respostas. Isso permite que o cliente descubra a API sem ter que conhecer a estrutura completa da aplicação com antecedência.
 
@@ -140,7 +142,7 @@ Benefícios do HATEOAS
 
 > - Facilidade de uso: O HATEOAS torna a API mais fácil de usar fornecendo uma maneira consistente para os clientes navegarem no estado da aplicação. Isso torna mais fácil para os desenvolvedores escrever clientes que consomem a API.
 
-# Documentação com Swagger framework
+### Documentação com Swagger framework
 
 > O Swagger framework é uma ferramenta que pode ser usada para documentar APIs RESTful. Ele permite que os desenvolvedores criem uma documentação interativa que pode ser usada por desenvolvedores e consumidores da API.
 
@@ -148,7 +150,7 @@ Benefícios do HATEOAS
 
 > Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
 
-# Autenticaçao com JWT 
+### Autenticaçao com JWT 
 
 
 > A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário.
@@ -161,9 +163,6 @@ Benefícios do HATEOAS
 > O JWT pode ser assinado usando uma chave secreta ou um par de chaves pública e privada. Se o token for assinado com uma chave secreta, o servidor e o cliente precisam compartilhar a chave secreta. Se o token for assinado com um par de chaves pública e privada, o servidor usa a chave privada para assinar o token e o cliente usa a chave pública para verificar a assinatura.
 
 > Anatomia de um JSON WEB TOKEN (JWT)
-
-
-
 
 
 ![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
