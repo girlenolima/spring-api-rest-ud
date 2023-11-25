@@ -147,3 +147,24 @@ Benefícios do HATEOAS
 > O Swagger framework pode ser usado para documentar APIs RESTful de várias maneiras. Uma maneira é usar a ferramenta Swagger UI. A Swagger UI é uma ferramenta web que pode ser usada para visualizar e testar APIs RESTful documentadas com o Swagger framework.
 
 > Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
+
+# Autenticaçao com JWT 
+
+
+> A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário.
+
+> O JWT é um formato de dados leve e compacto que é fácil de transportar e armazenar. O token é composto por três partes, separadas por pontos:
+> - Header: Contém as informações sobre o tipo de token, o algoritmo de assinatura e o conteúdo do token.
+> - HPayload: Contém as informações de autenticação, como o nome de usuário, o token de acesso e o tempo de expiração do token.
+> - HSignature: É uma assinatura digital do header e do payload do token.
+
+> O JWT pode ser assinado usando uma chave secreta ou um par de chaves pública e privada. Se o token for assinado com uma chave secreta, o servidor e o cliente precisam compartilhar a chave secreta. Se o token for assinado com um par de chaves pública e privada, o servidor usa a chave privada para assinar o token e o cliente usa a chave pública para verificar a assinatura.
+
+> Anatomia de um JSON WEB TOKEN (JWT)
+
+
+
+
+
+![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
+
