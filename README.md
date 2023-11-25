@@ -74,7 +74,7 @@ Body Params (Parâmetros no Corpo da Requisição):
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 
 
-# Verbos HTTP
+# Verbos HTTP mais comuns
 
 Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.
 
