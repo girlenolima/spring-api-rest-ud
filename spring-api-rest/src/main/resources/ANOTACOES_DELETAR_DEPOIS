@@ -1,0 +1,79 @@
+controller (controla as resquisiçoes solicitadas a API) {
+
+        @InjeçaoDeDependencia
+        private Services services;
+              -findyById(services)
+              -findALl(services)
+              -delete(services)
+              -update(services)
+              -save(services)
+}
+
+services (prover ao controller os serviços necessarios para responder um requisiçao){
+
+        @InjeçaoDeDependencia
+        private Repository repository
+              -findyById(repository)
+              -findALl(repository)
+              -delete(repository)
+              -update(repository)
+              -save(repository)
+}
+
+repository(camada que controla o acesso ao banco de dados, normalmente repassando informaçoes ao service){
+
+        /*Normalmente é uma interface extendendo do JpaRepository*/
+        public interface TipoDeDadoQualquer extends JpaRepository<TipoDeDadoQualquer, Long> {
+        }
+
+       /*demais metodos caso os metodos da interface nao supra */
+
+       ...
+       ...
+       ...
+}
+
+
+Model( modelo dos dados da aplicaçao pode ser qualquer coisa){
+  /*Somente o service tem acesso ao Model completo o controller deve ter acesso somente ao DTO*/
+        -nome
+        -numero
+        -telefone
+        -endereço
+
+}
+
+ModelRecord( modelo de exibiçao de dados do modelo original){
+    /*nao devemos retornar um Model completo e sim uma represetaçao exata do que foi solicitado*/
+    /*se a consulta pede nome e numero o DTO deve retornar somente isso*/
+        -nome
+        -numero
+}
+
+/***************************************************/
+Meus amigos...  2h sofridas para fazer o OpenAPI (Swagger) rodar no SpringBoot .
+O que seriamos sem uma comunidade bem ativa como essa do java, leia-se stackoverflow.
+Enfim, para as geraçoes futuras segue contribuiçao:
+
+
+Versao do spring :
+
+    <groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>3.0.1</version>
+
+Versao da dependecia openAPI :
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+De acordo com Baeldung a versao 2.0.0 da API ja é para funcionar com Spring 3.0.0, mas testei varias combinaçoes só funcionou esta acima.
+
+Pergunta: porque nao  usar uma versao mais antiga do spring ?
+Resposta:  Pois é tentei... mas todos os downgrades aplicados no spring quebravam aplicaçao "misteriosamente". Tinha duas soluçoes : "cuspir" codigos por todos os lados (referencia ao Robert C.Martim)  novamente ou tentar resolver.
+/***************************************************/
+mvn clean package spring-boot:run -DskipTests
+/***************************************************/
