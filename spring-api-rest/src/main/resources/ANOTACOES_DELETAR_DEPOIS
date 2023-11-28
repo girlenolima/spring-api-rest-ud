@@ -51,11 +51,6 @@ ModelRecord( modelo de exibiçao de dados do modelo original){
 }
 
 /***************************************************/
-Meus amigos...  2h sofridas para fazer o OpenAPI (Swagger) rodar no SpringBoot .
-O que seriamos sem uma comunidade bem ativa como essa do java, leia-se stackoverflow.
-Enfim, para as geraçoes futuras segue contribuiçao:
-
-
 Versao do spring :
 
     <groupId>org.springframework.boot</groupId>
@@ -70,10 +65,10 @@ Versao da dependecia openAPI :
             <version>2.0.2</version>
         </dependency>
 
-De acordo com Baeldung a versao 2.0.0 da API ja é para funcionar com Spring 3.0.0, mas testei varias combinaçoes só funcionou esta acima.
+De acordo com Baeldung a versao 2.0.0 da API ja é para
+funcionar com Spring 3.0.0, mas testei varias combinaçoes só funcionou esta acima.
 
-Pergunta: porque nao  usar uma versao mais antiga do spring ?
-Resposta:  Pois é tentei... mas todos os downgrades aplicados no spring quebravam aplicaçao "misteriosamente". Tinha duas soluçoes : "cuspir" codigos por todos os lados (referencia ao Robert C.Martim)  novamente ou tentar resolver.
+
 /***************************************************/
 mvn clean package spring-boot:run -DskipTests
 /***************************************************/
