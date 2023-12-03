@@ -168,12 +168,20 @@ Benefícios do HATEOAS
 ![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
 
 
-### Padrao de Projeto VO
+### Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
 
 > O padrão de projeto VO, ou Value Object, é um padrão de projeto comportamental que descreve a criação de objetos que representam dados simples, como nomes, endereços ou números de telefone. Os VOs são frequentemente usados em sistemas de API para representar dados que precisam ser transferidos entre diferentes componentes do sistema.
 
 > Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.
 
 > Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.
+
+#### Referencia de Martin Fowler sobre VO e DTO  
+<https://martinfowler.com/eaaCatalog/dataTransferObject.html>
+> *"Quando você trabalha com uma interface remota, como Remote Facade (388), cada chamada para ela é cara. Como resultado, você precisa reduzir o número de chamadas, o que significa que você precisa transferir mais dados a cada chamada. Uma maneira de fazer isso é usar muitos parâmetros. No entanto, muitas vezes isso é difícil de programar - na verdade, muitas vezes é impossível com linguagens como Java, que retornam apenas um único valor."*
+
+> *"A solução é criar um Objeto de Transferência de Dados que possa conter todos os dados da chamada. Ele precisa ser serializável para atravessar a conexão. Normalmente, um montador é usado no lado do servidor para transferir dados entre o DTO e quaisquer objetos de domínio."*
+
+> *"Embora o principal motivo para usar um objeto de transferência de dados seja agrupar o que seriam várias chamadas remotas em uma única chamada, vale a pena mencionar que outra vantagem é encapsular o mecanismo de serialização para transferência de dados pela rede. Ao encapsular a serialização dessa forma, os DTOs mantêm essa lógica fora do restante do código e também fornecem um ponto claro para alterar a serialização, caso deseje."*
 
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
