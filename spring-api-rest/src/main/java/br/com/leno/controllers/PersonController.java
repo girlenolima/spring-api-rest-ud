@@ -1,10 +1,11 @@
 package br.com.leno.controllers;
 
 
-import br.com.leno.model.Person;
+import br.com.leno.data.vo.v1.person.PersonDTO;
 import br.com.leno.services.PersonServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,48 +18,35 @@ public class PersonController {
     @Autowired
     private PersonServices service;
 
-    @RequestMapping(value = "/{id}",
-            method = RequestMethod.GET,
+   @GetMapping(value = "/{id}",
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public Person findById(@PathVariable(value = "id") Long id) throws Exception {
-
+    public PersonDTO findById(@PathVariable(value = "id") Long id) throws Exception {
         return service.findByid(id);
+   }
 
-    }
-
-    @RequestMapping(method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Person> findAll() {
-
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<PersonDTO> findAll() {
         return service.findAll();
-
     }
 
-    @RequestMapping(method = RequestMethod.POST,
-            produces = MediaType.APPLICATION_JSON_VALUE,
+
+  @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Person create(@RequestBody Person person) throws Exception {
+    public PersonDTO create(@RequestBody PersonDTO personDTO) throws Exception {
+        return service.create(personDTO);
+   }
 
-        return service.create(person);
-
-    }
-
-    @RequestMapping(method = RequestMethod.PUT,
-            produces = MediaType.APPLICATION_JSON_VALUE,
+   @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Person update(@RequestBody Person person) throws Exception {
-
-        return service.update(person);
-
+    public PersonDTO update(@RequestBody PersonDTO personDTO) throws Exception {
+        return service.update(personDTO);
     }
 
-    @RequestMapping(value = "/{id}",
-            method = RequestMethod.DELETE)
-    public void delete(@PathVariable(value = "id") Long id) {
-
-      service.delete(id);
-
-    }
+   @DeleteMapping(value = "/{id}")
+    public ResponseEntity<?> delete(@PathVariable(value = "id") Long id) {
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+   }
 
 
 }

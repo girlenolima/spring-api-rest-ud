@@ -1,16 +1,19 @@
 package br.com.leno.services;
 
+import br.com.leno.data.vo.v1.person.PersonDTO;
+
 import br.com.leno.exceptions.ResourceNotFoundException;
 import br.com.leno.model.Person;
 import br.com.leno.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.logging.Logger;
 
 
 /*
- * @Service informar ao Spring que isso é uma classe de serviço
+ * @Service informa ao Spring que isso é uma classe de serviço
  *
  * */
 @Service
@@ -21,48 +24,45 @@ public class PersonServices {
     @Autowired
     PersonRepository repository;
 
-    public Person findByid(Long id) {
+    public List<PersonDTO> findAll() {
+        return repository.findAll().stream().map(PersonDTO::new).toList();
+    }
 
-        logger.info("Find person");
+    public PersonDTO findByid(Long id) {
 
-
-        return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No record for ID"));
+        logger.info("Find PersonVO");
+        var entity = repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No record for ID"));
+        return new PersonDTO(entity);
     }
 
 
-    public List<Person> findAll() {
-        return repository.findAll();
+    public PersonDTO create(PersonDTO person) {
+
+        logger.info("Create PersonVO");
+        var vo = repository.save(new Person(person));
+        return new PersonDTO(vo);
     }
 
-    public Person create(Person person) {
+    public PersonDTO update(PersonDTO personDTO) {
 
-        logger.info("Create ´person");
-        return repository.save(person);
+        logger.info("Update PersonDTO");
+        var entity = repository.findById(personDTO.id()).orElseThrow(() -> new ResourceNotFoundException("No record for ID"));
 
-    }
+        entity.setFirstName(personDTO.firstName());
+        entity.setLastName(personDTO.lastName());
+        entity.setAddress(personDTO.address());
+        entity.setGender(personDTO.gender());
 
-    public Person update(Person person) {
-
-        logger.info("Update person");
-        var entity = repository.findById(person.getId()).orElseThrow(() -> new ResourceNotFoundException("No record for ID"));
-
-        entity.setFirstName(person.getFirstName());
-        entity.setLastName(person.getLastName());
-        entity.setAddress(person.getAddress());
-        entity.setGender(person.getGender());
-
-
-        return repository.save(person);
-
+        var person = repository.save(entity);
+        return new PersonDTO(person);
     }
 
     public void delete(Long id) {
-        logger.info("delete person");
+        logger.info("delete PersonVO");
         var entity = repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No record for ID"));
         repository.delete(entity);
 
     }
-
 
 
 }

@@ -1,5 +1,6 @@
 package br.com.leno.model;
 
+import br.com.leno.data.vo.v1.person.PersonDTO;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -8,7 +9,7 @@ import java.util.Objects;
 
 /*Anotaçoes do hibernate*/
 @Entity
-@Table(name="person")
+@Table(name = "person")
 public class Person implements Serializable {
 
     private static final long serialVersionUID = 1l;
@@ -19,16 +20,24 @@ public class Person implements Serializable {
 
     @Column(name = "first_name", nullable = false, length = 100)
     private String firstName;
-    @Column(name = "last_name" , nullable = false,length = 100)
+    @Column(name = "last_name", nullable = false, length = 100)
     private String lastName;
-    @Column(name = "address" , nullable = false,length = 150)
+    @Column(name = "address", nullable = false, length = 150)
     private String address;
 
-    @Column(name = "gender" , nullable = false,length = 10)
+    @Column(name = "gender", nullable = false, length = 10)
     private String gender;
 
 
     public Person() {
+    }
+
+    public Person(PersonDTO dto) {
+        this.firstName = dto.firstName();
+        this.lastName = dto.lastName();
+        this.address = dto.address();
+        this.gender = dto.gender();
+
     }
 
     public Long getId() {

@@ -67,8 +67,9 @@ Versao da dependecia openAPI :
 
 De acordo com Baeldung a versao 2.0.0 da API ja é para
 funcionar com Spring 3.0.0, mas testei varias combinaçoes só funcionou esta acima.
+/***************************************************/
 
 
-/***************************************************/
-mvn clean package spring-boot:run -DskipTests
-/***************************************************/
+1) mvn clean package spring-boot:run -DskipTests
+2) fazer paginaçao e ordenaçao exemplo alura
+3) alterar os model para usarem builder, assim simplifica os DTos
