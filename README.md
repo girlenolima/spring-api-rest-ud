@@ -185,3 +185,14 @@ Benefícios do HATEOAS
 > *"Embora o principal motivo para usar um objeto de transferência de dados seja agrupar o que seriam várias chamadas remotas em uma única chamada, vale a pena mencionar que outra vantagem é encapsular o mecanismo de serialização para transferência de dados pela rede. Ao encapsular a serialização dessa forma, os DTOs mantêm essa lógica fora do restante do código e também fornecem um ponto claro para alterar a serialização, caso deseje."*
 
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
+
+
+### Evolutionary Database Design
+
+<https://www.martinfowler.com/articles/evodb.html>
+
+> O design evolutivo de banco de dados (EDBD) é uma abordagem para o design e desenvolvimento de bancos de dados que permite mudanças e adaptações ao longo do tempo. Essa abordagem é contrastante com o design de banco de dados tradicional, que envolve a criação de uma estrutura de banco de dados estática antecipadamente e, em seguida, a implementação dela sem alterações significativas.
+
+>  O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.
+
+> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.
