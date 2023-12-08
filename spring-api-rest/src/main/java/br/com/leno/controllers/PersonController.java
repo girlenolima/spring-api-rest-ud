@@ -18,11 +18,11 @@ public class PersonController {
     @Autowired
     private PersonServices service;
 
-   @GetMapping(value = "/{id}",
+    @GetMapping(value = "/{id}",
             produces = MediaType.APPLICATION_JSON_VALUE)
     public PersonDTO findById(@PathVariable(value = "id") Long id) throws Exception {
         return service.findByid(id);
-   }
+    }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<PersonDTO> findAll() {
@@ -30,23 +30,23 @@ public class PersonController {
     }
 
 
-  @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE,
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public PersonDTO create(@RequestBody PersonDTO personDTO) throws Exception {
         return service.create(personDTO);
-   }
+    }
 
-   @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE,
+    @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public PersonDTO update(@RequestBody PersonDTO personDTO) throws Exception {
         return service.update(personDTO);
     }
 
-   @DeleteMapping(value = "/{id}")
+    @DeleteMapping(value = "/{id}")
     public ResponseEntity<?> delete(@PathVariable(value = "id") Long id) {
         service.delete(id);
         return ResponseEntity.noContent().build();
-   }
+    }
 
 
 }
