@@ -196,3 +196,58 @@ Benefícios do HATEOAS
 >  O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.
 
 > O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.
+
+### Customizando Serialization (JSON)
+
+> As anotações @JsonPropertyOrder e @JsonProperty são usadas para controlar a forma como os campos de uma classe Java são serializados para JSON.
+
+> A anotação @JsonPropertyOrder especifica a ordem dos campos na saída JSON. A ordem dos campos é especificada como uma matriz de strings, onde cada string é o nome do campo. Por exemplo, a seguinte classe Java:
+
+```
+Java
+public class Pessoa {
+
+    @JsonProperty("nome")
+    private String nome;
+
+    @JsonProperty("idade")
+    private int idade;
+
+    @JsonProperty("endereco")
+    private Endereco endereco;
+}
+```
+
+```
+JSON
+{
+    "nome": "José da Silva",
+    "idade": 30,
+    "endereco": {
+        "rua": "Rua da Paz",
+        "numero": 100,
+        "bairro": "Centro"
+    }
+}
+```
+> Para especificar uma ordem diferente, podemos usar a anotação @JsonPropertyOrder
+
+```
+JAVA
+@JsonPropertyOrder({"idade", "nome", "endereco"})
+public class Pessoa {
+    // ...
+}
+```
+
+> Para especificar um nome diferente para um campo, podemos usar a anotação @JsonProperty:
+
+```
+@JsonProperty("nomeCompleto")
+private String nome;
+```
+
+### Content Negotiation
+
+
+
