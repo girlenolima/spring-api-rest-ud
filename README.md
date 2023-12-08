@@ -249,5 +249,23 @@ private String nome;
 
 ### Content Negotiation
 
+> API suporta content negotiation, o que significa que ela pode fornecer o resultado em diferentes formatos, como XML, CSV, YAML, e também em diferentes idiomas. Essa capacidade é importante para garantir que a API possa ser consumida por diferentes clientes, independentemente de suas preferências ou restrições.
+
+> Para especificar o formato e o idioma da resposta, o cliente deve enviar o header Accept na requisição HTTP. O servidor, então, usará esse header para determinar o formato e o idioma da resposta.
+
+> O content negotiation funciona usando os headers da requisição HTTP. O cliente envia um header Accept que especifica os formatos e idiomas que ele aceita. O servidor, por sua vez, usa esse header para determinar o formato e o idioma da resposta.
+
+> Por exemplo, o cliente pode enviar a seguinte requisição HTTP para solicitar o resultado em formato XML:
+
+```
+GET /produtos HTTP/1.1
+Accept: application/xml
+Nesse caso, o servidor retornará a lista de produtos no formato XML.
+```
+
+> Para implementar o content negotiation em sua API, você precisará configurar o servidor para responder às requisições HTTP com base nos headers Accept. Você pode fazer isso usando uma biblioteca de processamento HTTP, como o Spring Boot: https://spring.io/projects/spring-boot ou o FastAPI: https://fastapi.tiangolo.com/.
+
+
+
 
 
