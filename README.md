@@ -265,7 +265,16 @@ Nesse caso, o servidor retornará a lista de produtos no formato XML.
 
 > Para implementar o content negotiation em sua API, você precisará configurar o servidor para responder às requisições HTTP com base nos headers Accept. Você pode fazer isso usando uma biblioteca de processamento HTTP, como o Spring Boot: https://spring.io/projects/spring-boot ou o FastAPI: https://fastapi.tiangolo.com/.
 
+> Este projeto implementa faster atraves das dependencias maven : 
+```
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-xml</artifactId>
+</dependency>
 
-
-
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-yaml</artifactId>
+</dependency>
+```
 
