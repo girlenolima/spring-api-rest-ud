@@ -1,41 +1,32 @@
-package br.com.leno.model;
+package br.com.leno.data.vo.v1.person;
 
-import br.com.leno.data.vo.v1.person.PersonDTO;
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.springframework.hateoas.RepresentationModel;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 
-/*Anotaçoes do hibernate*/
-@Entity
-@Table(name = "person")
-public class Person implements Serializable {
+/*@JsonPropertyOrder ordena os campos que sao exibidos no JSON*/
+@JsonPropertyOrder({"id","firstName","lastName","address","gender"})
+public class PersonVO extends RepresentationModel<PersonVO> implements Serializable {
 
     private static final long serialVersionUID = 1l;
 
-    /**
-     * Em produçao trocar  IDENTITY -> UUID
-     *
-     * */
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name ="id")
+    /*@JsonProperty muda o nome que exibido no JSON*/
+    @JsonProperty("Id")
     private Long idU;
 
-    @Column(name = "first_name", nullable = false, length = 100)
     private String firstName;
-    @Column(name = "last_name", nullable = false, length = 100)
+
     private String lastName;
-    @Column(name = "address", nullable = false, length = 150)
+
     private String address;
 
-    @Column(name = "gender", nullable = false, length = 10)
     private String gender;
 
-
-    public Person() {
+    public PersonVO() {
     }
 
 
@@ -46,7 +37,6 @@ public class Person implements Serializable {
     public void setIdU(Long idU) {
         this.idU = idU;
     }
-
 
     public String getFirstName() {
         return firstName;
@@ -85,18 +75,19 @@ public class Person implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(idU, person.idU) && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(address, person.address) && Objects.equals(gender, person.gender);
+        if (!super.equals(o)) return false;
+        PersonVO personVO = (PersonVO) o;
+        return Objects.equals(idU, personVO.idU) && Objects.equals(firstName, personVO.firstName) && Objects.equals(lastName, personVO.lastName) && Objects.equals(address, personVO.address) && Objects.equals(gender, personVO.gender);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idU, firstName, lastName, address, gender);
+        return Objects.hash(super.hashCode(), idU, firstName, lastName, address, gender);
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "PersonVO{" +
                 "idU=" + idU +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
