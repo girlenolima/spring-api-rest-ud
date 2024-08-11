@@ -2,6 +2,20 @@
 
 ### <p align="justify"> Este projeto é um desafio pessoal de criar uma API RESTful utilizando Java, Spring e suas tecnologias. Aqui, você encontrará um resumo dos conceitos e tecnologias que serão utilizados no projeto. Inicialmente, este README será dividido em três partes: conceitos introdutórios, tecnologias utilizadas e implementação prática.</p>
 
+
+### SOAP ou REST ?
+| PONTOS                     | SOAP                                    | REST                                  |
+|----------------------------|-----------------------------------------|---------------------------------------|
+| Definição                  | Protocolo de troca de mensagens em XML  | Estilo arquitetural                   |
+| Comunicação                | Usa WSDL entre cliente e servidor       | Usa XML, JSON para enviar e receber dados |
+| Como as chamadas são feitas | Método RPC                              | URL PATH                              |
+| Retorno                    | XML dentro de um SOAP envelope          | Retorna diversos formatos             |
+| Protocolos                 | HTTP, SMTP, FTP ...                     | HTTP                                  |
+| Complexidade               | Alta                                    | Baixa                                 |
+| Performance                | Baixa                                   | Alta                                  |
+
+
+
 ### Web Service 
 
 > <p align="justify"> Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
