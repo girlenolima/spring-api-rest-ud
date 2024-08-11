@@ -3,7 +3,7 @@
 ### <p align="justify"> Este projeto é um desafio pessoal de criar uma API RESTful utilizando Java, Spring e suas tecnologias. Aqui, você encontrará um resumo dos conceitos e tecnologias que serão utilizados no projeto. Inicialmente, este README será dividido em três partes: conceitos introdutórios, tecnologias utilizadas e implementação prática.</p>
 
 
-### SOAP ou REST ?
+### Porque usar REST e mao SOAP ?
 | PONTOS                     | SOAP                                    | REST                                  |
 |----------------------------|-----------------------------------------|---------------------------------------|
 | Definição                  | Protocolo de troca de mensagens em XML  | Estilo arquitetural                   |
@@ -13,6 +13,17 @@
 | Protocolos                 | HTTP, SMTP, FTP ...                     | HTTP                                  |
 | Complexidade               | Alta                                    | Baixa                                 |
 | Performance                | Baixa                                   | Alta                                  |
+
+
+<p align="justify"> Ao ponderar entre REST e SOAP, a pergunta que fica é: por que complicar o que pode ser simples? REST oferece uma abordagem mais moderna, 
+eficiente e acessível para a comunicação entre sistemas, tornando-se a escolha ideal para a maioria dos projetos de APIs.</p>
+
+<p align="justify"> REST frequentemente se destaca. Por ser menos complexo e por permitir a troca de dados em formatos leves como JSON, o REST tende a ter uma performance superior, especialmente em ambientes onde a latência e o consumo de recursos são fatores críticos. O SOAP, com sua estrutura mais pesada, pode introduzir sobrecarga e afetar negativamente a performance da aplicação.</p>
+
+<p align="justify"> As operações padrão do protocolo HTTP (como GET, POST, PUT, DELETE), o que facilita a integração com a web e torna o desenvolvimento de APIs mais natural para desenvolvedores familiarizados com o ambiente web. SOAP, por outro lado, requer uma maior complexidade na comunicação, utilizando métodos de chamada remota (RPC) e WSDL para descrever os serviços, o que pode ser desnecessariamente complicado para muitas aplicações.</p>
+
+<p align="justify"> Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
+
 
 
 
