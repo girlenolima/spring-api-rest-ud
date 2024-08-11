@@ -25,7 +25,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 <p align="justify"> Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
 
 
-
+Com a definição do paradigma/arquitetura/protocolo definida vamos pontuar cada tecnologia utilizada no projeto
 
 ### Web Service 
 
