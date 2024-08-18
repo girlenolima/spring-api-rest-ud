@@ -44,7 +44,7 @@ Com a definição do paradigma/arquitetura/protocolo definida vamos pontuar cada
 > - Evolução: Os sistemas RESTful devem ser projetados de forma a serem facilmente evoluídos, sem afetar a funcionalidade ou a interoperabilidade.
 
 
-#### Roy fielding em sua tese define que o REST tem 6 restriçoes: 
+Roy fielding em sua tese define que o REST tem 6 restriçoes: 
 > Cliente Servidor  
 > As duas partes vedem estar separadas. 
 
