@@ -23,13 +23,16 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 <p align="justify"> :page_facing_up: As operações padrão do protocolo HTTP (como GET, POST, PUT, DELETE), o que facilita a integração com a web e torna o desenvolvimento de APIs mais natural para desenvolvedores familiarizados com o ambiente web. SOAP, por outro lado, requer uma maior complexidade na comunicação, utilizando métodos de chamada remota (RPC) e WSDL para descrever os serviços, o que pode ser desnecessariamente complicado para muitas aplicações.</p>
 
 <p align="justify"> :page_facing_up: Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
-
+<br>
+<br>
 
 ### :blue_book: Web Service 
 ---
 <p align="justify"> :page_facing_up: Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
 
 <p align="justify"> :page_facing_up: Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
+<br>
+<br>
 
 ### :blue_book: Rest 
 ---
@@ -56,8 +59,8 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 > Suportar conceitos de balancemaento de cargtas, proxys e firewalls.
 > - Codigo sob demanda
 > O cliente pode solicitar o codigo do servidor e executa-lo
-
-
+<br>
+<br>
 
 ### :blue_book: Resquest e Response
 ---
@@ -71,7 +74,8 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 <p align="justify"> Uma resposta (ou response) é a mensagem enviada pelo servidor em resposta a uma requisição recebida. Ela contém informações sobre o resultado da operação solicitada pelo cliente. Isso inclui um código de status HTTP que indica se a operação foi bem-sucedida, informações adicionais sobre a resposta e, quando apropriado, dados retornados pelo servidor. As respostas podem conter dados no formato desejado, como HTML, XML ou JSON, dependendo do tipo de serviço web e das preferências especificadas na requisição. O conjunto de códigos de status HTTP, como 200 OK, 404 Not Found e 500 Internal Server Error, é utilizado para comunicar o resultado da operação ao cliente de forma padronizada.</p>
 
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
-
+<br>
+<br>
 
 ### :blue_book: Parametros
 ---
@@ -111,7 +115,8 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 
 :page_facing_up: Body Params (Parâmetros no Corpo da Requisição):
 > Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
-
+<br>
+<br>
 
 ### :blue_book: HTTP Status Codes mais usados.
 ---
@@ -140,7 +145,8 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 >  - 5xx - Erro do Servidor:
 >    - 500 Internal Server Error: Indica um erro interno do servidor.
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
-
+<br>
+<br>
 
 ### :blue_book: Verbos HTTP mais comuns
 ---
@@ -167,7 +173,8 @@ Semântica de Atualização:
 >    - PATCH é frequentemente utilizado quando se deseja atualizar campos específicos de um recurso sem afetar o restante das informações.
 > Operação Atômica:
 >    - As operações PATCH são consideradas atômicas, o que significa que a aplicação das modificações é tratada como uma única operação, garantindo consistência nos dados.
-
+<br>
+<br>
 
 ### :blue_book: Modelo de maturidade de Richardson 
 ---
@@ -194,7 +201,8 @@ Nível 2 - Utilização de Verbos HTTP:
 Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > - Introduz a ideia de HATEOAS, onde a representação de um recurso contém links para transições de estado possíveis.
 > - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
-
+<br>
+<br>
 
 ### :blue_book: Hateoas
 ---
@@ -215,6 +223,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 :page_facing_up: O  framework pode ser usado para documentar APIs RESTful de várias maneiras. Uma maneira é usar a ferramenta Swagger UI. A Swagger UI é uma ferramenta web que pode ser usada para visualizar e testar APIs RESTful documentadas com o Swagger framework.
 
 :page_facing_up: Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
+<br>
+<br>
 
 ### :blue_book: Autenticaçao com JWT 
 ---
@@ -232,6 +242,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 ![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
 
+<br>
+<br>
 
 ### :blue_book: Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
 ---
@@ -240,6 +252,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 <p align="justify"> :page_facing_up: Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.</p>
 
 <p align="justify"> :page_facing_up: Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
+<br>
+<br>
 
 #### :blue_book: Referencia de Martin Fowler sobre VO e DTO  
 ---
@@ -251,7 +265,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > *"Embora o principal motivo para usar um objeto de transferência de dados seja agrupar o que seriam várias chamadas remotas em uma única chamada, vale a pena mencionar que outra vantagem é encapsular o mecanismo de serialização para transferência de dados pela rede. Ao encapsular a serialização dessa forma, os DTOs mantêm essa lógica fora do restante do código e também fornecem um ponto claro para alterar a serialização, caso deseje."*
 
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
-
+<br>
+<br>
 
 ### :blue_book: Evolutionary Database Design
 ---
@@ -262,6 +277,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 >  <p align="justify">  O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.</p>
 
 > <p align="justify"> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
+<br>
+<br>
 
 ### :blue_book: Customizando Serialization (JSON)
 ---
@@ -312,6 +329,8 @@ public class Pessoa {
 @JsonProperty("nomeCompleto")
 private String nome;
 ```
+<br>
+<br>
 
 ### :blue_book: Content Negotiation
 ---
@@ -343,10 +362,14 @@ Este projeto implementa faster atraves das dependencias maven :
     <artifactId>jackson-dataformat-yaml</artifactId>
 </dependency>
 ```
+<br>
+<br>
 
 ### :blue_book: Adcionado Hateoas
 ---
 -------------------> explicar depois e detalhar, nesse momento estou sem paciencia para este item.
+<br>
+<br>
 
 ### :blue_book: Mockito
 ---
