@@ -172,6 +172,8 @@ Content-Type: application/json
 ---
 <p align="justify"> :page_facing_up: Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.</p>
 
+<br>
+
 | Verbo HTTP | Descrição | Operação CRUD | Tipos de Parâmetros Suportados |
 |------------|-----------|---------------|--------------------------------|
 | **POST**   | Usado para criar um novo recurso. | Create (Criar) | Body Params, Header Params, Query Params |
