@@ -60,7 +60,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 > - Codigo sob demanda
 > O cliente pode solicitar o codigo do servidor e executa-lo
 <br>
-<br>
+
 
 ### :blue_book: Resquest e Response
 ---
@@ -75,7 +75,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
 <br>
-<br>
+
 
 ### :blue_book: Parametros
 ---
@@ -116,7 +116,7 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 :page_facing_up: Body Params (Parâmetros no Corpo da Requisição):
 > Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
 <br>
-<br>
+
 
 ### :blue_book: HTTP Status Codes mais usados.
 ---
@@ -146,7 +146,7 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 >    - 500 Internal Server Error: Indica um erro interno do servidor.
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 <br>
-<br>
+
 
 ### :blue_book: Verbos HTTP mais comuns
 ---
@@ -173,7 +173,6 @@ Semântica de Atualização:
 >    - PATCH é frequentemente utilizado quando se deseja atualizar campos específicos de um recurso sem afetar o restante das informações.
 > Operação Atômica:
 >    - As operações PATCH são consideradas atômicas, o que significa que a aplicação das modificações é tratada como uma única operação, garantindo consistência nos dados.
-<br>
 <br>
 
 ### :blue_book: Modelo de maturidade de Richardson 
@@ -202,7 +201,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > - Introduz a ideia de HATEOAS, onde a representação de um recurso contém links para transições de estado possíveis.
 > - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
 <br>
-<br>
+
 
 ### :blue_book: Hateoas
 ---
@@ -224,7 +223,6 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 :page_facing_up: Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
 <br>
-<br>
 
 ### :blue_book: Autenticaçao com JWT 
 ---
@@ -243,7 +241,6 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 ![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
 
 <br>
-<br>
 
 ### :blue_book: Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
 ---
@@ -252,7 +249,6 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 <p align="justify"> :page_facing_up: Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.</p>
 
 <p align="justify"> :page_facing_up: Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
-<br>
 <br>
 
 #### :blue_book: Referencia de Martin Fowler sobre VO e DTO  
@@ -266,7 +262,6 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
 <br>
-<br>
 
 ### :blue_book: Evolutionary Database Design
 ---
@@ -277,7 +272,6 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 >  <p align="justify">  O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.</p>
 
 > <p align="justify"> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
-<br>
 <br>
 
 ### :blue_book: Customizando Serialization (JSON)
@@ -330,7 +324,6 @@ public class Pessoa {
 private String nome;
 ```
 <br>
-<br>
 
 ### :blue_book: Content Negotiation
 ---
@@ -363,12 +356,10 @@ Este projeto implementa faster atraves das dependencias maven :
 </dependency>
 ```
 <br>
-<br>
 
 ### :blue_book: Adcionado Hateoas
 ---
 -------------------> explicar depois e detalhar, nesse momento estou sem paciencia para este item.
-<br>
 <br>
 
 ### :blue_book: Mockito
