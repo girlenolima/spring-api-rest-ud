@@ -172,17 +172,18 @@ Content-Type: application/json
 ---
 <p align="justify"> :page_facing_up: Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.</p>
 
-| Verbo HTTP | Descrição | Operação CRUD |
-|------------|-----------|---------------|
-| **POST**   | Usado para criar um novo recurso. | Create (Criar) |
-| **GET**    | Usado para recuperar um recurso existente. | Read (Ler) |
-| **PUT**    | Usado para atualizar um recurso existente completamente. | Update (Atualizar) |
-| **DELETE** | Usado para excluir um recurso existente. | Delete (Excluir) |
-| **PATCH**  | Usado para aplicar modificações parciais a um recurso existente. | Update (Atualizar parcialmente) |
-| **HEAD**   | Recupera os cabeçalhos de um recurso, sem o corpo. | Read (Ler) |
-| **OPTIONS**| Descreve as opções de comunicação com o recurso. | - (Nenhuma operação específica) |
-| **CONNECT**| Estabelece um túnel de comunicação com o servidor. | - (Nenhuma operação específica) |
-| **TRACE**  | Realiza um loopback de teste de mensagem ao longo do caminho ao servidor. | - (Nenhuma operação específica) |
+| Verbo HTTP | Descrição | Operação CRUD | Tipos de Parâmetros Suportados |
+|------------|-----------|---------------|--------------------------------|
+| **POST**   | Usado para criar um novo recurso. | Create (Criar) | Body Params, Header Params, Query Params |
+| **GET**    | Usado para recuperar um recurso existente. | Read (Ler) | Path Params, Header Params, Query Params |
+| **PUT**    | Usado para atualizar um recurso existente completamente. | Update (Atualizar) | Path Params, Body Params, Header Params, Query Params |
+| **DELETE** | Usado para excluir um recurso existente. | Delete (Excluir) | Path Params, Header Params, Query Params |
+| **PATCH**  | Usado para aplicar modificações parciais a um recurso existente. | Update (Atualizar parcialmente) | Path Params, Body Params, Header Params, Query Params |
+| **HEAD**   | Recupera os cabeçalhos de um recurso, sem o corpo. | Read (Ler) | Path Params, Header Params, Query Params |
+| **OPTIONS**| Descreve as opções de comunicação com o recurso. | - (Nenhuma operação específica) | Header Params |
+| **CONNECT**| Estabelece um túnel de comunicação com o servidor. | - (Nenhuma operação específica) | Header Params |
+| **TRACE**  | Realiza um loopback de teste de mensagem ao longo do caminho ao servidor. | - (Nenhuma operação específica) | Header Params |
+
 
 
 <br>
