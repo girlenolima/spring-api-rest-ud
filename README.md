@@ -172,17 +172,18 @@ Content-Type: application/json
 ---
 <p align="justify"> :page_facing_up: Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.</p>
 
-| Verbo  | Descrição                                                                                                                                                      |
-|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GET    | Recupera um recurso existente. Exemplo: recuperar dados de um usuário específico.                                                                   |
-| POST   | Criar um novo recurso. Exemplo: criar uma nova conta de usuário.                                                                                     |
-| PUT    | Atualiza um recurso existente, substituindo-o completamente. Exemplo: atualizar todas as informações de um usuário.                                 |
-| DELETE | Deleta um recurso existente. Exemplo: excluir uma conta de usuário.                                                                                 |
-| PATCH  | Aplica modificações parciais a um recurso. Exemplo: atualizar apenas um campo específico de um recurso.                                             |
-| HEAD   | Recupera os cabeçalhos de um recurso, sem o corpo da resposta. Exemplo: verificar os metadados de um recurso.                                       |
-| OPTIONS| Descreve as opções de comunicação com o recurso. Exemplo: descobrir os métodos HTTP suportados por um servidor.                                     |
-| CONNECT| Estabelece um túnel de comunicação. Exemplo: conectar-se a um servidor proxy.                                                                       |
-| TRACE  | Executa um loopback de teste ao longo do caminho até o recurso de destino. Exemplo: depurar conexões HTTP.                                          |
+| Verbo HTTP | Descrição | Operação CRUD |
+|------------|-----------|---------------|
+| **POST**   | Usado para criar um novo recurso. | Create (Criar) |
+| **GET**    | Usado para recuperar um recurso existente. | Read (Ler) |
+| **PUT**    | Usado para atualizar um recurso existente completamente. | Update (Atualizar) |
+| **DELETE** | Usado para excluir um recurso existente. | Delete (Excluir) |
+| **PATCH**  | Usado para aplicar modificações parciais a um recurso existente. | Update (Atualizar parcialmente) |
+| **HEAD**   | Recupera os cabeçalhos de um recurso, sem o corpo. | Read (Ler) |
+| **OPTIONS**| Descreve as opções de comunicação com o recurso. | - (Nenhuma operação específica) |
+| **CONNECT**| Estabelece um túnel de comunicação com o servidor. | - (Nenhuma operação específica) |
+| **TRACE**  | Realiza um loopback de teste de mensagem ao longo do caminho ao servidor. | - (Nenhuma operação específica) |
+
 
 <br>
 
