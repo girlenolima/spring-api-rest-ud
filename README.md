@@ -3,6 +3,7 @@
 <p align="justify"> Este projeto é um desafio pessoal de criar uma API RESTful utilizando Java, Spring e suas tecnologias. Aqui, você encontrará um resumo dos conceitos e tecnologias que serão utilizados no projeto. Inicialmente, este README será dividido em três partes: conceitos introdutórios, tecnologias utilizadas e implementação prática.</p>
 
 ### :blue_book: Porque usar REST e nao SOAP ?
+---
 | PONTOS                     | SOAP                                    | REST                                  |
 |----------------------------|-----------------------------------------|---------------------------------------|
 | Definição                  | Protocolo de troca de mensagens em XML  | Estilo arquitetural                   |
@@ -25,12 +26,13 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 
 ### :blue_book: Web Service 
-
+---
 <p align="justify"> :page_facing_up: Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
 
 <p align="justify"> :page_facing_up: Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
 
 ### :blue_book: Rest 
+---
 <p align="justify"> :page_facing_up:  REST (Representational State Transfer) é uma arquitetura de software que define um conjunto de princípios e restrições para o design de serviços web. Diferentemente de protocolos como SOAP, REST não é um protocolo, mas um estilo arquitetônico baseado em padrões da web, como HTTP.REST é frequentemente utilizado em conjunto com o protocolo HTTP, aproveitando os métodos HTTP para operações CRUD (Create, Read, Update, Delete) e os códigos de status para indicar o resultado da operação. Essa abordagem simplificada e baseada em padrões torna o REST uma escolha popular para o desenvolvimento de serviços web, especialmente em contextos onde a simplicidade e a escalabilidade são prioridades.</p>
 
 - Representação: Os recursos são representados por entidades, que são objetos de dados que podem ser manipulados por operações.
@@ -58,7 +60,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 
 ### :blue_book: Resquest e Response
-
+---
 :page_facing_up: Request (Requisição):
 <p align="justify"> Em um contexto de serviços web, uma requisição (ou request) é uma mensagem enviada por um cliente para solicitar a execução de uma operação específica em um servidor. Essa mensagem inclui informações como o método da requisição (como GET, POST, PUT ou DELETE), o URL do recurso desejado e, em casos de métodos que permitem o envio de dados, os parâmetros ou corpo da requisição. As requisições são a maneira pela qual os clientes interagem com os serviços web, solicitando ações ou informações específicas.</p>
 
@@ -72,6 +74,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 
 ### :blue_book: Parametros
+---
 
 :page_facing_up: Path Params (Parâmetros de Caminho):
 
@@ -86,7 +89,6 @@ https://host/api/teste/v1/find-person/asc/10/1
 |  asc                       | ordenaçao ascendente em sorte           |    "/"                  |
 |  10                        | pagina com 10 itens                     |    "/"                  |
 | 1                          | para iniciar na pagina 1                |    "/"                  |
-
 
 
 :page_facing_up: Query Params (Parâmetros de Consulta):
