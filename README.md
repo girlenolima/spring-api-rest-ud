@@ -81,10 +81,35 @@ Response (Resposta):
 ### Parametros
 
 Path Params (Parâmetros de Caminho):
-> São usados para identificar e acessar recursos específicos na URL. Inseridos diretamente no caminho, eles são obrigatórios e normalmente representam valores únicos, como IDs.
+
+> <p align="justify"> Path Params em REST são parâmetros inseridos diretamente na URL de uma solicitação de API para identificar recursos específicos. Eles são parte da rota e geralmente indicam a hierarquia dos recursos, como IDs. Por exemplo, em uma URL como /users/{id}, o {id} é um Path Param que será substituído pelo valor real do ID do usuário.</p>
+
+```
+https://host/api/teste/v1/find-person/asc/10/1
+```
+
+| Paramentro                 | Resultado                               | Conector / divisor      |
+|----------------------------|-----------------------------------------|-------------------------|
+|  asc                       | ordenaçao ascendente em sorte           |    "/"                  |
+|  10                        | pagina com 10 itens                     |    "/"                  |
+| 1                          | para iniciar na pagina 1                |    "/"                  |
+
+
 
 Query Params (Parâmetros de Consulta):
-> Permitem filtrar ou personalizar resultados, adicionando informações à URL após o símbolo "?". São opcionais e frequentemente usados para configurações, filtros ou informações adicionais.
+
+> <p align="justify">Query Params (Parâmetros de Consulta) em REST são parâmetros adicionados à URL após um ponto de interrogação (?) para modificar ou filtrar a resposta da API. Eles não fazem parte do caminho da rota, mas são usados para enviar informações adicionais à API.</p>
+
+```
+https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
+```
+| Paramentro                 | Resultado                               |  Conector / divisor      |
+|----------------------------|-----------------------------------------|--------------------------|
+|  fistName                  | busca pelo primeiro nome                |    {"?" , "&"}           |
+|  lastName                  | busca pelo ultimo nome                  |   {"?" , "&"}            |
+
+
+
 
 Header Params (Parâmetros de Cabeçalho):
 > Transportam informações adicionais no cabeçalho da requisição. São úteis para autenticação (como tokens) e metadados que não fazem parte da URL ou do corpo da requisição.
