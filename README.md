@@ -14,52 +14,45 @@
 | Performance                | Baixa                                   | Alta                                  |
 
 
-<p align="justify"> Ao ponderar entre REST e SOAP, a pergunta que fica é: por que complicar o que pode ser simples? REST oferece uma abordagem mais moderna, 
+<p align="justify"> :page_facing_up: Ao ponderar entre REST e SOAP, a pergunta que fica é: por que complicar o que pode ser simples? REST oferece uma abordagem mais moderna, 
 eficiente e acessível para a comunicação entre sistemas, tornando-se a escolha ideal para a maioria dos projetos de APIs.</p>
 
-<p align="justify"> REST frequentemente se destaca. Por ser menos complexo e por permitir a troca de dados em formatos leves como JSON, o REST tende a ter uma performance superior, especialmente em ambientes onde a latência e o consumo de recursos são fatores críticos. O SOAP, com sua estrutura mais pesada, pode introduzir sobrecarga e afetar negativamente a performance da aplicação.</p>
+<p align="justify"> :page_facing_up: REST frequentemente se destaca. Por ser menos complexo e por permitir a troca de dados em formatos leves como JSON, o REST tende a ter uma performance superior, especialmente em ambientes onde a latência e o consumo de recursos são fatores críticos. O SOAP, com sua estrutura mais pesada, pode introduzir sobrecarga e afetar negativamente a performance da aplicação.</p>
 
-<p align="justify"> As operações padrão do protocolo HTTP (como GET, POST, PUT, DELETE), o que facilita a integração com a web e torna o desenvolvimento de APIs mais natural para desenvolvedores familiarizados com o ambiente web. SOAP, por outro lado, requer uma maior complexidade na comunicação, utilizando métodos de chamada remota (RPC) e WSDL para descrever os serviços, o que pode ser desnecessariamente complicado para muitas aplicações.</p>
+<p align="justify"> :page_facing_up: As operações padrão do protocolo HTTP (como GET, POST, PUT, DELETE), o que facilita a integração com a web e torna o desenvolvimento de APIs mais natural para desenvolvedores familiarizados com o ambiente web. SOAP, por outro lado, requer uma maior complexidade na comunicação, utilizando métodos de chamada remota (RPC) e WSDL para descrever os serviços, o que pode ser desnecessariamente complicado para muitas aplicações.</p>
 
-<p align="justify"> Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
+<p align="justify"> :page_facing_up: Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
 
-
-Com a definição do paradigma/arquitetura/protocolo definida vamos pontuar cada tecnologia utilizada no projeto
 
 ### :blue_book: Web Service 
 
-> <p align="justify"> Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
+<p align="justify"> :page_facing_up: Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
 
-> <p align="justify"> Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
+<p align="justify"> :page_facing_up: Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
 
 ### :blue_book: Rest 
-> <p align="justify"> REST (Representational State Transfer) é uma arquitetura de software que define um conjunto de princípios e restrições para o design de serviços web. Diferentemente de protocolos como SOAP, REST não é um protocolo, mas um estilo arquitetônico baseado em padrões da web, como HTTP.REST é frequentemente utilizado em conjunto com o protocolo HTTP, aproveitando os métodos HTTP para operações CRUD (Create, Read, Update, Delete) e os códigos de status para indicar o resultado da operação. Essa abordagem simplificada e baseada em padrões torna o REST uma escolha popular para o desenvolvimento de serviços web, especialmente em contextos onde a simplicidade e a escalabilidade são prioridades.</p>
+<p align="justify"> :page_facing_up:  REST (Representational State Transfer) é uma arquitetura de software que define um conjunto de princípios e restrições para o design de serviços web. Diferentemente de protocolos como SOAP, REST não é um protocolo, mas um estilo arquitetônico baseado em padrões da web, como HTTP.REST é frequentemente utilizado em conjunto com o protocolo HTTP, aproveitando os métodos HTTP para operações CRUD (Create, Read, Update, Delete) e os códigos de status para indicar o resultado da operação. Essa abordagem simplificada e baseada em padrões torna o REST uma escolha popular para o desenvolvimento de serviços web, especialmente em contextos onde a simplicidade e a escalabilidade são prioridades.</p>
 
-> - Representação: Os recursos são representados por entidades, que são objetos de dados que podem ser manipulados por operações.
-> - Sinalização: As operações são realizadas por meio de métodos HTTP, como GET, POST, PUT e DELETE.
-> - Cadeias de recursos: Os recursos são relacionados por meio de URLs, que podem ser compostas para representar relacionamentos complexos.
-> - Cacheabilidade: Os recursos podem ser armazenados em cache pelo cliente ou pelo servidor, para melhorar o desempenho.
-> - Segurança: Os recursos podem ser protegidos por meio de mecanismos de autenticação e autorização.
-> - Evolução: Os sistemas RESTful devem ser projetados de forma a serem facilmente evoluídos, sem afetar a funcionalidade ou a interoperabilidade.
+- Representação: Os recursos são representados por entidades, que são objetos de dados que podem ser manipulados por operações.
+- Sinalização: As operações são realizadas por meio de métodos HTTP, como GET, POST, PUT e DELETE.
+- Cadeias de recursos: Os recursos são relacionados por meio de URLs, que podem ser compostas para representar relacionamentos complexos.
+- Cacheabilidade: Os recursos podem ser armazenados em cache pelo cliente ou pelo servidor, para melhorar o desempenho.
+- Segurança: Os recursos podem ser protegidos por meio de mecanismos de autenticação e autorização.
+- Evolução: Os sistemas RESTful devem ser projetados de forma a serem facilmente evoluídos, sem afetar a funcionalidade ou a interoperabilidade.
 
 
-Roy fielding em sua tese define que o REST tem 6 restriçoes: 
-> Cliente Servidor  
+:page_facing_up: Roy fielding em sua tese define que o REST tem 6 restriçoes: 
+> - Cliente Servidor  
 > As duas partes vedem estar separadas. 
-
-> Stateless server
+> - Stateless server
 > Nao deve guardar o estado do cliente,cada resqueste tem todas as informaçoes.
-
-> Cacheabilidade
+> -  Cacheabilidade
 > O cliente deve ser informado sobre as propriedade de cache.
-
-> Interface Uniforme
+> -  Interface Uniforme
 > Interface uniforme entre cliente e servidor.
-
-> Sitema dem camadas
+> - Sistema dem camadas
 > Suportar conceitos de balancemaento de cargtas, proxys e firewalls.
-
-> Codigo sob demanda
+> - Codigo sob demanda
 > O cliente pode solicitar o codigo do servidor e executa-lo
 
 
