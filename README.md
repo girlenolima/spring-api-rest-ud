@@ -217,14 +217,14 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 ### :blue_book: Autenticaçao com JWT 
 
-<p align="justify"> A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário. </p>
+<p align="justify"> :page_facing_up: A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário. </p>
 
 > O JWT é um formato de dados leve e compacto que é fácil de transportar e armazenar. O token é composto por três partes, separadas por pontos:
 > - Header: Contém as informações sobre o tipo de token, o algoritmo de assinatura e o conteúdo do token.
 > - HPayload: Contém as informações de autenticação, como o nome de usuário, o token de acesso e o tempo de expiração do token.
 > - HSignature: É uma assinatura digital do header e do payload do token.
 
-<p align="justify"> O JWT pode ser assinado usando uma chave secreta ou um par de chaves pública e privada. Se o token for assinado com uma chave secreta, o servidor e o cliente precisam compartilhar a chave secreta. Se o token for assinado com um par de chaves pública e privada, o servidor usa a chave privada para assinar o token e o cliente usa a chave pública para verificar a assinatura. </p>
+<p align="justify"> :page_facing_up: O JWT pode ser assinado usando uma chave secreta ou um par de chaves pública e privada. Se o token for assinado com uma chave secreta, o servidor e o cliente precisam compartilhar a chave secreta. Se o token for assinado com um par de chaves pública e privada, o servidor usa a chave privada para assinar o token e o cliente usa a chave pública para verificar a assinatura. </p>
 
 > Anatomia de um JSON WEB TOKEN (JWT)
 
@@ -234,11 +234,11 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 ### :blue_book: Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
 
-<p align="justify"> O padrão de projeto VO, ou Value Object, é um padrão de projeto comportamental que descreve a criação de objetos que representam dados simples, como nomes, endereços ou números de telefone. Os VOs são frequentemente usados em sistemas de API para representar dados que precisam ser transferidos entre diferentes componentes do sistema.</p>
+<p align="justify"> :page_facing_up: O padrão de projeto VO, ou Value Object, é um padrão de projeto comportamental que descreve a criação de objetos que representam dados simples, como nomes, endereços ou números de telefone. Os VOs são frequentemente usados em sistemas de API para representar dados que precisam ser transferidos entre diferentes componentes do sistema.</p>
 
-<p align="justify"> Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.</p>
+<p align="justify"> :page_facing_up: Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.</p>
 
-<p align="justify"> Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
+<p align="justify"> :page_facing_up: Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
 
 #### Referencia de Martin Fowler sobre VO e DTO  
 <https://martinfowler.com/eaaCatalog/dataTransferObject.html>
@@ -255,11 +255,11 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 <https://www.martinfowler.com/articles/evodb.html>
 
-> <p align="justify"> O design evolutivo de banco de dados (EDBD) é uma abordagem para o design e desenvolvimento de bancos de dados que permite mudanças e adaptações ao longo do tempo. Essa abordagem é contrastante com o design de banco de dados tradicional, que envolve a criação de uma estrutura de banco de dados estática antecipadamente e, em seguida, a implementação dela sem alterações significativas.</p>
+> <p align="justify"> :page_facing_up: O design evolutivo de banco de dados (EDBD) é uma abordagem para o design e desenvolvimento de bancos de dados que permite mudanças e adaptações ao longo do tempo. Essa abordagem é contrastante com o design de banco de dados tradicional, que envolve a criação de uma estrutura de banco de dados estática antecipadamente e, em seguida, a implementação dela sem alterações significativas.</p>
 
->  <p align="justify"> O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.</p>
+>  <p align="justify"> :page_facing_up: O esquema do banco de dados é desenvolvido de forma incremental, à medida que as necessidades do negócio mudam. Isso permite que os bancos de dados sejam adaptados às mudanças de requisitos sem a necessidade de uma reengenharia completa.</p>
 
-> <p align="justify"> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
+> <p align="justify"> :page_facing_up: O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
 
 ### :blue_book: Customizando Serialization (JSON)
 
@@ -313,11 +313,11 @@ private String nome;
 
 ### :blue_book: Content Negotiation
 
-> <p align="justify"> API suporta content negotiation, o que significa que ela pode fornecer o resultado em diferentes formatos, como XML, CSV, YAML, e também em diferentes idiomas. Essa capacidade é importante para garantir que a API possa ser consumida por diferentes clientes, independentemente de suas preferências ou restrições.</p>
+> <p align="justify">  :page_facing_up: API suporta content negotiation, o que significa que ela pode fornecer o resultado em diferentes formatos, como XML, CSV, YAML, e também em diferentes idiomas. Essa capacidade é importante para garantir que a API possa ser consumida por diferentes clientes, independentemente de suas preferências ou restrições.</p>
 
-> <p align="justify"> Para especificar o formato e o idioma da resposta, o cliente deve enviar o header Accept na requisição HTTP. O servidor, então, usará esse header para determinar o formato e o idioma da resposta.</p>
+> <p align="justify"> :page_facing_up: Para especificar o formato e o idioma da resposta, o cliente deve enviar o header Accept na requisição HTTP. O servidor, então, usará esse header para determinar o formato e o idioma da resposta.</p>
 
-> <p align="justify"> O content negotiation funciona usando os headers da requisição HTTP. O cliente envia um header Accept que especifica os formatos e idiomas que ele aceita. O servidor, por sua vez, usa esse header para determinar o formato e o idioma da resposta. </p>
+> <p align="justify"> :page_facing_up: O content negotiation funciona usando os headers da requisição HTTP. O cliente envia um header Accept que especifica os formatos e idiomas que ele aceita. O servidor, por sua vez, usa esse header para determinar o formato e o idioma da resposta. </p>
 
 > Por exemplo, o cliente pode enviar a seguinte requisição HTTP para solicitar o resultado em formato XML:
 
@@ -327,7 +327,7 @@ Accept: application/xml
 Nesse caso, o servidor retornará a lista de produtos no formato XML.
 ```
 
-> <p align="justify"> Para implementar o content negotiation em sua API, você precisará configurar o servidor para responder às requisições HTTP com base nos headers Accept. Você pode fazer isso usando uma biblioteca de processamento HTTP, como o Spring Boot: https://spring.io/projects/spring-boot ou o FastAPI: https://fastapi.tiangolo.com/.</p>
+> <p align="justify"> :page_facing_up: Para implementar o content negotiation em sua API, você precisará configurar o servidor para responder às requisições HTTP com base nos headers Accept. Você pode fazer isso usando uma biblioteca de processamento HTTP, como o Spring Boot: https://spring.io/projects/spring-boot ou o FastAPI: https://fastapi.tiangolo.com/.</p>
 
 > Este projeto implementa faster atraves das dependencias maven : 
 ```
