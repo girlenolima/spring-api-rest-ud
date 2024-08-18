@@ -24,7 +24,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 <p align="justify"> :page_facing_up: Outra vantagem significativa do REST é sua capacidade de trabalhar com múltiplos formatos de dados, como JSON, XML, e até mesmo simples texto. Enquanto o SOAP está restrito ao uso de XML dentro de um envelope SOAP, o REST pode se adaptar ao formato de dados mais adequado para o contexto, resultando em uma comunicação mais eficiente e menos sobrecarregada.</p>
 <br>
-<br>
+
 
 ### :blue_book: Web Service 
 ---
@@ -32,7 +32,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 <p align="justify"> :page_facing_up: Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
 <br>
-<br>
+
 
 ### :blue_book: Rest 
 ---
