@@ -60,13 +60,13 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 ### :blue_book: Resquest e Response
 
 :page_facing_up: Request (Requisição):
-> <p align="justify"> Em um contexto de serviços web, uma requisição (ou request) é uma mensagem enviada por um cliente para solicitar a execução de uma operação específica em um servidor. Essa mensagem inclui informações como o método da requisição (como GET, POST, PUT ou DELETE), o URL do recurso desejado e, em casos de métodos que permitem o envio de dados, os parâmetros ou corpo da requisição. As requisições são a maneira pela qual os clientes interagem com os serviços web, solicitando ações ou informações específicas.</p>
+<p align="justify"> Em um contexto de serviços web, uma requisição (ou request) é uma mensagem enviada por um cliente para solicitar a execução de uma operação específica em um servidor. Essa mensagem inclui informações como o método da requisição (como GET, POST, PUT ou DELETE), o URL do recurso desejado e, em casos de métodos que permitem o envio de dados, os parâmetros ou corpo da requisição. As requisições são a maneira pela qual os clientes interagem com os serviços web, solicitando ações ou informações específicas.</p>
 
 ![request](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/fae37093-d8fa-4b79-ab27-8b09297aa06b)
 
 
 :page_facing_up: Response (Resposta):
-> <p align="justify"> Uma resposta (ou response) é a mensagem enviada pelo servidor em resposta a uma requisição recebida. Ela contém informações sobre o resultado da operação solicitada pelo cliente. Isso inclui um código de status HTTP que indica se a operação foi bem-sucedida, informações adicionais sobre a resposta e, quando apropriado, dados retornados pelo servidor. As respostas podem conter dados no formato desejado, como HTML, XML ou JSON, dependendo do tipo de serviço web e das preferências especificadas na requisição. O conjunto de códigos de status HTTP, como 200 OK, 404 Not Found e 500 Internal Server Error, é utilizado para comunicar o resultado da operação ao cliente de forma padronizada.</p>
+<p align="justify"> Uma resposta (ou response) é a mensagem enviada pelo servidor em resposta a uma requisição recebida. Ela contém informações sobre o resultado da operação solicitada pelo cliente. Isso inclui um código de status HTTP que indica se a operação foi bem-sucedida, informações adicionais sobre a resposta e, quando apropriado, dados retornados pelo servidor. As respostas podem conter dados no formato desejado, como HTML, XML ou JSON, dependendo do tipo de serviço web e das preferências especificadas na requisição. O conjunto de códigos de status HTTP, como 200 OK, 404 Not Found e 500 Internal Server Error, é utilizado para comunicar o resultado da operação ao cliente de forma padronizada.</p>
 
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
 
@@ -75,7 +75,7 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 :page_facing_up: Path Params (Parâmetros de Caminho):
 
-> <p align="justify"> Path Params em REST são parâmetros inseridos diretamente na URL de uma solicitação de API para identificar recursos específicos. Eles são parte da rota e geralmente indicam a hierarquia dos recursos, como IDs. Por exemplo, em uma URL como /users/{id}, o {id} é um Path Param que será substituído pelo valor real do ID do usuário.</p>
+<p align="justify"> Path Params em REST são parâmetros inseridos diretamente na URL de uma solicitação de API para identificar recursos específicos. Eles são parte da rota e geralmente indicam a hierarquia dos recursos, como IDs. Por exemplo, em uma URL como /users/{id}, o {id} é um Path Param que será substituído pelo valor real do ID do usuário.</p>
 
 ```
 https://host/api/teste/v1/find-person/asc/10/1
@@ -91,7 +91,7 @@ https://host/api/teste/v1/find-person/asc/10/1
 
 :page_facing_up: Query Params (Parâmetros de Consulta):
 
-> <p align="justify">Query Params (Parâmetros de Consulta) em REST são parâmetros adicionados à URL após um ponto de interrogação (?) para modificar ou filtrar a resposta da API. Eles não fazem parte do caminho da rota, mas são usados para enviar informações adicionais à API.</p>
+<p align="justify">Query Params (Parâmetros de Consulta) em REST são parâmetros adicionados à URL após um ponto de interrogação (?) para modificar ou filtrar a resposta da API. Eles não fazem parte do caminho da rota, mas são usados para enviar informações adicionais à API.</p>
 
 ```
 https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
