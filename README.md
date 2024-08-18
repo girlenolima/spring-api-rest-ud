@@ -42,26 +42,26 @@ Com a definição do paradigma/arquitetura/protocolo definida vamos pontuar cada
 > - Cacheabilidade: Os recursos podem ser armazenados em cache pelo cliente ou pelo servidor, para melhorar o desempenho.
 > - Segurança: Os recursos podem ser protegidos por meio de mecanismos de autenticação e autorização.
 > - Evolução: Os sistemas RESTful devem ser projetados de forma a serem facilmente evoluídos, sem afetar a funcionalidade ou a interoperabilidade.
->
 
-Roy fielding em sua tese define que o REST tem 6 restriçoes: 
-Cliente Servidor  
-As duas partes vedem estar separadas. 
 
-Stateless server
-Nao deve guardar o estado do cliente,cada resqueste tem todas as informaçoes.
+### Roy fielding em sua tese define que o REST tem 6 restriçoes: 
+> Cliente Servidor  
+> As duas partes vedem estar separadas. 
 
-Cacheabilidade
-O cliente deve ser informado sobre as propriedade de cache.
+> Stateless server
+> Nao deve guardar o estado do cliente,cada resqueste tem todas as informaçoes.
 
-Interface Uniforme
-Interface uniforme entre cliente e servidor.
+> Cacheabilidade
+> O cliente deve ser informado sobre as propriedade de cache.
 
-Sitema dem camadas
-Suportar conceitos de balancemaento de cargtas, proxys e firewalls.
+> Interface Uniforme
+> Interface uniforme entre cliente e servidor.
 
-Codigo sob demanda
-O cliente pode solicitar o codigo do servidor e executa-lo
+> Sitema dem camadas
+> Suportar conceitos de balancemaento de cargtas, proxys e firewalls.
+
+> Codigo sob demanda
+> O cliente pode solicitar o codigo do servidor e executa-lo
 
 
 
