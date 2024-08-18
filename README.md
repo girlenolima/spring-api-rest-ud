@@ -233,6 +233,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 <br>
 
 ### :blue_book: Documentação com Swagger framework
+---
 
 :page_facing_up: O Swagger framework é uma ferramenta que pode ser usada para documentar APIs RESTful. Ele permite que os desenvolvedores criem uma documentação interativa que pode ser usada por desenvolvedores e consumidores da API.
 
