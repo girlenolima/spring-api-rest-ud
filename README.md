@@ -2,7 +2,7 @@
 
 <p align="justify"> Este projeto é um desafio pessoal de criar uma API RESTful utilizando Java, Spring e suas tecnologias. Aqui, você encontrará um resumo dos conceitos e tecnologias que serão utilizados no projeto. Inicialmente, este README será dividido em três partes: conceitos introdutórios, tecnologias utilizadas e implementação prática.</p>
 
-### Porque usar REST e nao SOAP ?
+### :blue_book: Porque usar REST e nao SOAP ?
 | PONTOS                     | SOAP                                    | REST                                  |
 |----------------------------|-----------------------------------------|---------------------------------------|
 | Definição                  | Protocolo de troca de mensagens em XML  | Estilo arquitetural                   |
@@ -26,13 +26,13 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 Com a definição do paradigma/arquitetura/protocolo definida vamos pontuar cada tecnologia utilizada no projeto
 
-### Web Service 
+### :blue_book: Web Service 
 
 > <p align="justify"> Serviços web são uma tecnologia essencial para a comunicação entre sistemas computacionais pela World Wide Web. Eles facilitam a transferência de dados e a execução de funções entre diferentes plataformas, empregando protocolos como SOAP (Simple Object Access Protocol) para serviços baseados em XML e REST (Representational State Transfer) para abordagens mais leves baseadas em padrões HTTP. A descrição de serviços é feita através de linguagens como WSDL (Web Services Description Language) ou especificações como Swagger/OpenAPI. A segurança é garantida por meio de protocolos como SSL/TLS e extensões específicas, como WS-Security. Diversas implementações, como JAX-WS para serviços SOAP e JAX-RS para serviços REST, proporcionam a criação eficiente e interoperável de serviços web, promovendo a integração de sistemas de maneira global.</p>
 
 > <p align="justify"> Esses serviços também se beneficiam de registros como o UDDI (Universal Description, Discovery, and Integration) para facilitar a descoberta global de serviços. Os formatos de dados, como XML e JSON, desempenham papéis cruciais na troca eficiente de informações entre sistemas. Essa abordagem amplamente adotada oferece uma arquitetura flexível e padronizada, promovendo a conectividade e a colaboração eficaz entre aplicações distribuídas em ambientes diversos.</p>
 
-### Rest 
+### :blue_book: Rest 
 > <p align="justify"> REST (Representational State Transfer) é uma arquitetura de software que define um conjunto de princípios e restrições para o design de serviços web. Diferentemente de protocolos como SOAP, REST não é um protocolo, mas um estilo arquitetônico baseado em padrões da web, como HTTP.REST é frequentemente utilizado em conjunto com o protocolo HTTP, aproveitando os métodos HTTP para operações CRUD (Create, Read, Update, Delete) e os códigos de status para indicar o resultado da operação. Essa abordagem simplificada e baseada em padrões torna o REST uma escolha popular para o desenvolvimento de serviços web, especialmente em contextos onde a simplicidade e a escalabilidade são prioridades.</p>
 
 > - Representação: Os recursos são representados por entidades, que são objetos de dados que podem ser manipulados por operações.
@@ -64,7 +64,7 @@ Roy fielding em sua tese define que o REST tem 6 restriçoes:
 
 
 
-### Resquest e Response
+### :blue_book: Resquest e Response
 
 Request (Requisição):
 > <p align="justify"> Em um contexto de serviços web, uma requisição (ou request) é uma mensagem enviada por um cliente para solicitar a execução de uma operação específica em um servidor. Essa mensagem inclui informações como o método da requisição (como GET, POST, PUT ou DELETE), o URL do recurso desejado e, em casos de métodos que permitem o envio de dados, os parâmetros ou corpo da requisição. As requisições são a maneira pela qual os clientes interagem com os serviços web, solicitando ações ou informações específicas.</p>
@@ -78,7 +78,7 @@ Response (Resposta):
 ![response](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/a55d5b48-4110-4f88-86f9-fb3945ce6dc1)
 
 
-### Parametros
+### :blue_book: Parametros
 
 Path Params (Parâmetros de Caminho):
 
@@ -118,7 +118,7 @@ Body Params (Parâmetros no Corpo da Requisição):
 > Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
 
 
-### HTTP Status Codes mais usados.
+### :blue_book: HTTP Status Codes mais usados.
 
 
 > <p align="justify"> Os HTTP Status Codes, ou códigos de status HTTP, são indicadores numéricos retornados como parte das respostas de requisições HTTP, fornecendo informações sobre o resultado da operação realizada. Divididos em cinco classes, esses códigos começam com os dígitos 1 a 5, onde os 2xx indicam sucesso, os 3xx indicam redirecionamento, os 4xx sinalizam erros do cliente, e os 5xx indicam erros do servidor. Esses códigos desempenham um papel crucial em comunicações cliente-servidor, permitindo uma compreensão rápida e padronizada do estado da requisição, o que facilita o diagnóstico de problemas e a implementação de tratamentos adequados no desenvolvimento de aplicações web.</p>
@@ -148,7 +148,7 @@ Body Params (Parâmetros no Corpo da Requisição):
 >    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 
 
-### Verbos HTTP mais comuns
+### :blue_book: Verbos HTTP mais comuns
 
 <p align="justify"> Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.</p>
 
@@ -175,7 +175,7 @@ Semântica de Atualização:
 >    - As operações PATCH são consideradas atômicas, o que significa que a aplicação das modificações é tratada como uma única operação, garantindo consistência nos dados.
 
 
-### Modelo de maturidade de Richardson 
+### :blue_book: Modelo de maturidade de Richardson 
 
 > <p align="justify"> Os níveis de maturidade do REST, também conhecidos como Richardson Maturity Model ou Modelo de Maturidade de Richardson, foram propostos por Leonard Richardson em seu artigo "Maturity Heuristics for Building Scalable and Maintainable RESTful Services". Este modelo define quatro níveis de maturidade para a implementação de serviços RESTful. Vamos explorar cada nível: </p>
 
@@ -202,7 +202,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > - As ações possíveis são descobertas dinamicamente pela aplicação cliente, reduzindo a necessidade de conhecimento prévio da API.
 
 
-### Hateoas
+### :blue_book: Hateoas
 
 > <p align="justify"> HATEOAS significa Hypermedia as the Engine of Application State. É um princípio de design para APIs RESTful que afirma que a API deve fornecer todas as informações necessárias para o cliente navegar no estado da aplicação. Isso significa que a API deve retornar links para recursos relacionados em suas respostas. Isso permite que o cliente descubra a API sem ter que conhecer a estrutura completa da aplicação com antecedência.</p>
 
@@ -222,7 +222,7 @@ Benefícios do HATEOAS
 
 > Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
 
-### Autenticaçao com JWT 
+### :blue_book: Autenticaçao com JWT 
 
 
 > <p align="justify"> A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário. </p>
@@ -240,7 +240,7 @@ Benefícios do HATEOAS
 ![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
 
 
-### Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
+### :blue_book: Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
 
 > <p align="justify"> O padrão de projeto VO, ou Value Object, é um padrão de projeto comportamental que descreve a criação de objetos que representam dados simples, como nomes, endereços ou números de telefone. Os VOs são frequentemente usados em sistemas de API para representar dados que precisam ser transferidos entre diferentes componentes do sistema.</p>
 
@@ -259,7 +259,7 @@ Benefícios do HATEOAS
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
 
 
-### Evolutionary Database Design
+### :blue_book: Evolutionary Database Design
 
 <https://www.martinfowler.com/articles/evodb.html>
 
@@ -269,7 +269,7 @@ Benefícios do HATEOAS
 
 > <p align="justify"> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
 
-### Customizando Serialization (JSON)
+### :blue_book: Customizando Serialization (JSON)
 
 > As anotações @JsonPropertyOrder e @JsonProperty são usadas para controlar a forma como os campos de uma classe Java são serializados para JSON.
 
@@ -319,7 +319,7 @@ public class Pessoa {
 private String nome;
 ```
 
-### Content Negotiation
+### :blue_book: Content Negotiation
 
 > <p align="justify"> API suporta content negotiation, o que significa que ela pode fornecer o resultado em diferentes formatos, como XML, CSV, YAML, e também em diferentes idiomas. Essa capacidade é importante para garantir que a API possa ser consumida por diferentes clientes, independentemente de suas preferências ou restrições.</p>
 
@@ -350,10 +350,10 @@ Nesse caso, o servidor retornará a lista de produtos no formato XML.
 </dependency>
 ```
 
-### Adcionado Hateoas
+### :blue_book: Adcionado Hateoas
 -------------------> explicar depois e detalhar, nesse momento estou sem paciencia para este item.
 
-### Mockito
+### :blue_book: Mockito
 
 > <p align="justify"> Mockito é um framework de teste de código aberto para Java lançado sob a licença MIT. A estrutura permite a criação de objetos duplos de teste em testes de unidade automatizados para fins de desenvolvimento orientado a testes ou desenvolvimento orientado a comportamento. </p>
 > <p align="justify">Ele fornece uma API simples e concisa para criar objetos duplos de teste. Os objetos duplos podem ser usados para simular a interação com outros objetos ou sistemas, permitindo que os testes se concentrem no comportamento da unidade de teste em questão. </p>
