@@ -81,13 +81,11 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 ### :blue_book: Parametros
 ---
 
-:page_facing_up: Path Params (Parâmetros de Caminho):
-
 <p align="justify">Em APIs e serviços web, diferentes tipos de parâmetros são utilizados para definir e refinar requisições. Parâmetros de caminho (Path Params) são incorporados diretamente na URL para identificar recursos específicos, enquanto parâmetros de consulta (Query Params) são adicionados após um ponto de interrogação para filtrar ou modificar a resposta. Parâmetros de cabeçalho (Header Params) são enviados nos cabeçalhos da requisição para transmitir metadados e informações adicionais, como autenticação, e parâmetros no corpo da requisição (Body Params) são utilizados para enviar dados complexos em requisições POST, PUT ou PATCH, frequentemente em formatos como JSON ou XML. Cada tipo desempenha um papel específico na comunicação entre cliente e servidor, permitindo uma interação eficaz e personalizada.</p>
 
 Via de regra usamos Path Params e Query Params como paramentros de busca, ja os Body Params para as operaçoes de persistencia.
 
-
+:page_facing_up: Path Params (Parâmetros de Consulta):
 <p align="justify"> Path Params em REST são parâmetros inseridos diretamente na URL de uma solicitação de API para identificar recursos específicos. Eles são parte da rota e geralmente indicam a hierarquia dos recursos, como IDs. Por exemplo, em uma URL como /users/{id}, o {id} é um Path Param que será substituído pelo valor real do ID do usuário.</p>
 
 ```
@@ -148,29 +146,25 @@ Content-Type: application/json
 ---
 <p align="justify"> :page_facing_up: Os HTTP Status Codes, ou códigos de status HTTP, são indicadores numéricos retornados como parte das respostas de requisições HTTP, fornecendo informações sobre o resultado da operação realizada. Divididos em cinco classes, esses códigos começam com os dígitos 1 a 5, onde os 2xx indicam sucesso, os 3xx indicam redirecionamento, os 4xx sinalizam erros do cliente, e os 5xx indicam erros do servidor. Esses códigos desempenham um papel crucial em comunicações cliente-servidor, permitindo uma compreensão rápida e padronizada do estado da requisição, o que facilita o diagnóstico de problemas e a implementação de tratamentos adequados no desenvolvimento de aplicações web.</p>
 
->  - 1xx - Informativos:
->    - 100 Continue: Indica que o servidor recebeu os cabeçalhos da requisição e o cliente deve prosseguir com o corpo da requisição.
+<br>
 
->  - 2xx - Sucesso:
->    -  200 OK: A requisição foi bem-sucedida.
->    - 201 Created: A requisição resultou na criação de um novo recurso.
->    - 204 No Content: A requisição foi bem-sucedida, mas não há conteúdo para retornar.
+| Código | Categoria                | Descrição                                                                                   |
+|--------|--------------------------|---------------------------------------------------------------------------------------------|
+| 100    | Informativos             | Continue: Indica que o servidor recebeu os cabeçalhos da requisição e o cliente deve prosseguir com o corpo da requisição. |
+| 200    | Sucesso                  | OK: A requisição foi bem-sucedida.                                                           |
+| 201    | Sucesso                  | Created: A requisição resultou na criação de um novo recurso.                                |
+| 204    | Sucesso                  | No Content: A requisição foi bem-sucedida, mas não há conteúdo para retornar.                |
+| 301    | Redirecionamento         | Moved Permanently: O recurso solicitado foi movido permanentemente para uma nova localização. |
+| 302    | Redirecionamento         | Found: O recurso solicitado foi movido temporariamente para uma nova localização.            |
+| 304    | Redirecionamento         | Not Modified: Indica que o recurso não foi modificado desde a última requisição.            |
+| 400    | Erro do Cliente          | Bad Request: A requisição não pode ser processada devido a uma sintaxe inválida.            |
+| 401    | Erro do Cliente          | Unauthorized: O cliente deve se autenticar para obter acesso.                               |
+| 403    | Erro do Cliente          | Forbidden: O servidor entende a requisição, mas o acesso é proibido.                         |
+| 404    | Erro do Cliente          | Not Found: O recurso solicitado não foi encontrado.                                          |
+| 409    | Erro do Cliente          | Conflict: A requisição não pode ser concluída devido a um conflito com o estado atual do recurso. |
+| 500    | Erro do Servidor         | Internal Server Error: Indica um erro interno do servidor.                                  |
+| 503    | Erro do Servidor         | Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção. |
 
->  - 3xx - Redirecionamento:
->    - 301 Moved Permanently: O recurso solicitado foi movido permanentemente para uma nova localização.
->    - 302 Found: O recurso solicitado foi movido temporariamente para uma nova localização.
->    - 304 Not Modified: Indica que o recurso não foi modificado desde a última requisição.
-
->  - 4xx - Erro do Cliente:
->    - 400 Bad Request: A requisição não pode ser processada devido a uma sintaxe inválida.
->    - 401 Unauthorized: O cliente deve se autenticar para obter acesso.
->    - 403 Forbidden: O servidor entende a requisição, mas o acesso é proibido.
->    - 404 Not Found: O recurso solicitado não foi encontrado.
->    - 409 Conflict: A requisição não pode ser concluída devido a um conflito com o estado atual do recurso.
-
->  - 5xx - Erro do Servidor:
->    - 500 Internal Server Error: Indica um erro interno do servidor.
->    - 503 Service Unavailable: O servidor não está pronto para manipular a requisição. Pode estar temporariamente sobrecarregado ou em manutenção.
 <br>
 
 
