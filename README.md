@@ -83,6 +83,11 @@ eficiente e acessível para a comunicação entre sistemas, tornando-se a escolh
 
 :page_facing_up: Path Params (Parâmetros de Caminho):
 
+<p align="justify">Em APIs e serviços web, diferentes tipos de parâmetros são utilizados para definir e refinar requisições. Parâmetros de caminho (Path Params) são incorporados diretamente na URL para identificar recursos específicos, enquanto parâmetros de consulta (Query Params) são adicionados após um ponto de interrogação para filtrar ou modificar a resposta. Parâmetros de cabeçalho (Header Params) são enviados nos cabeçalhos da requisição para transmitir metadados e informações adicionais, como autenticação, e parâmetros no corpo da requisição (Body Params) são utilizados para enviar dados complexos em requisições POST, PUT ou PATCH, frequentemente em formatos como JSON ou XML. Cada tipo desempenha um papel específico na comunicação entre cliente e servidor, permitindo uma interação eficaz e personalizada.</p>
+
+Via de regra usamos Path Params e Query Params como paramentros de busca, ja os Body Params para as operaçoes de persistencia.
+
+
 <p align="justify"> Path Params em REST são parâmetros inseridos diretamente na URL de uma solicitação de API para identificar recursos específicos. Eles são parte da rota e geralmente indicam a hierarquia dos recursos, como IDs. Por exemplo, em uma URL como /users/{id}, o {id} é um Path Param que será substituído pelo valor real do ID do usuário.</p>
 
 ```
@@ -95,10 +100,11 @@ https://host/api/teste/v1/find-person/asc/10/1
 |  10                        | pagina com 10 itens                     |    "/"                  |
 | 1                          | para iniciar na pagina 1                |    "/"                  |
 
+<br>
 
 :page_facing_up: Query Params (Parâmetros de Consulta):
 
-<p align="justify">Query Params (Parâmetros de Consulta) em REST são parâmetros adicionados à URL após um ponto de interrogação (?) para modificar ou filtrar a resposta da API. Eles não fazem parte do caminho da rota, mas são usados para enviar informações adicionais à API.</p>
+<p align="justify"> Query Params (Parâmetros de Consulta) em REST são parâmetros adicionados à URL após um ponto de interrogação (?) para modificar ou filtrar a resposta da API. Eles não fazem parte do caminho da rota, mas são usados para enviar informações adicionais à API.</p>
 
 ```
 https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
@@ -108,16 +114,35 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 |  fistName                  | busca pelo primeiro nome                |    {"?" , "&"}           |
 |  lastName                  | busca pelo ultimo nome                  |   {"?" , "&"}            |
 
-
-
-
-:page_facing_up: Header Params (Parâmetros de Cabeçalho):
-> Transportam informações adicionais no cabeçalho da requisição. São úteis para autenticação (como tokens) e metadados que não fazem parte da URL ou do corpo da requisição.
-
-:page_facing_up: Body Params (Parâmetros no Corpo da Requisição):
-> Enviados no corpo da requisição HTTP, são comumente utilizados para transmitir dados complexos, como JSON em requisições POST ou PUT. Podem ser obrigatórios ou opcionais, dependendo do endpoint.
 <br>
 
+:page_facing_up: Header Params (Parâmetros de Cabeçalho):
+<p align="justify"> Em REST são utilizados para passar informações adicionais em uma solicitação ou resposta HTTP. Eles são enviados no cabeçalho da requisição ou resposta e não no corpo da mensagem. Esses parâmetros podem fornecer metadados, como informações de autenticação, controle de cache, ou especificações sobre o formato dos dados. </p>
+
+Nao podem ser enviados via navegador, é necessario cliente especial para envia-los. 
+
+```
+GET /api/resource HTTP/1.1
+Host: example.com
+Authorization: Bearer <token>
+Accept: application/json
+```
+<br>
+
+:page_facing_up: Body Params (Parâmetros no Corpo da Requisição):
+<p align="justify">Os parâmetros no corpo da requisição (Body Params) são utilizados em métodos HTTP, como POST e PUT, para enviar dados ao servidor. Esses parâmetros são incluídos no corpo da requisição e são usados para criar ou atualizar recursos. </p>
+
+```
+POST /api/users
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "email": "joao.silva@example.com",
+  "password": "senha123"
+}
+```
+<br>
 
 ### :blue_book: HTTP Status Codes mais usados.
 ---
