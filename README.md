@@ -114,8 +114,7 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 
 
 ### :blue_book: HTTP Status Codes mais usados.
-
-
+---
 <p align="justify"> :page_facing_up: Os HTTP Status Codes, ou códigos de status HTTP, são indicadores numéricos retornados como parte das respostas de requisições HTTP, fornecendo informações sobre o resultado da operação realizada. Divididos em cinco classes, esses códigos começam com os dígitos 1 a 5, onde os 2xx indicam sucesso, os 3xx indicam redirecionamento, os 4xx sinalizam erros do cliente, e os 5xx indicam erros do servidor. Esses códigos desempenham um papel crucial em comunicações cliente-servidor, permitindo uma compreensão rápida e padronizada do estado da requisição, o que facilita o diagnóstico de problemas e a implementação de tratamentos adequados no desenvolvimento de aplicações web.</p>
 
 >  - 1xx - Informativos:
@@ -144,7 +143,7 @@ https://host/api/teste/v1/findPerson?fistName=Francisco&lastName=Silva
 
 
 ### :blue_book: Verbos HTTP mais comuns
-
+---
 <p align="justify"> :page_facing_up: Os verbos HTTP são um conjunto de métodos de requisição que definem a ação a ser executada para um dado recurso. Eles são usados em APIs RESTful para fornecer uma convenção de nomenclatura que facilite a compreensão de como uma API funciona.</p>
 
 POST
@@ -171,7 +170,7 @@ Semântica de Atualização:
 
 
 ### :blue_book: Modelo de maturidade de Richardson 
-
+---
 <p align="justify"> :page_facing_up: Os níveis de maturidade do REST, também conhecidos como Richardson Maturity Model ou Modelo de Maturidade de Richardson, foram propostos por Leonard Richardson em seu artigo "Maturity Heuristics for Building Scalable and Maintainable RESTful Services". Este modelo define quatro níveis de maturidade para a implementação de serviços RESTful. Vamos explorar cada nível: </p>
 
 ![maturidade](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/73423351-1415-4a4c-be57-bd5184b65591)
@@ -198,7 +197,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 
 ### :blue_book: Hateoas
-
+---
 <p align="justify"> :page_facing_up: HATEOAS significa Hypermedia as the Engine of Application State. É um princípio de design para APIs RESTful que afirma que a API deve fornecer todas as informações necessárias para o cliente navegar no estado da aplicação. Isso significa que a API deve retornar links para recursos relacionados em suas respostas. Isso permite que o cliente descubra a API sem ter que conhecer a estrutura completa da aplicação com antecedência.</p>
 
 :page_facing_up: Benefícios do HATEOAS
@@ -218,7 +217,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 :page_facing_up: Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
 
 ### :blue_book: Autenticaçao com JWT 
-
+---
 <p align="justify"> :page_facing_up: A autenticação via JWT (JSON Web Token) é um método de autenticação que usa um token assinado digitalmente para representar as credenciais de um usuário. O token é gerado pelo servidor e enviado ao cliente, que o armazena em um local seguro. O cliente envia o token para o servidor em cada solicitação autenticada. O servidor verifica a assinatura do token e, se for válido, autentica o usuário. </p>
 
 > O JWT é um formato de dados leve e compacto que é fácil de transportar e armazenar. O token é composto por três partes, separadas por pontos:
@@ -235,14 +234,15 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 
 ### :blue_book: Padrao de Projeto: Value Object VO / Data Transfer Object (DTO) - Farinha do mesmo saco.
-
+---
 <p align="justify"> :page_facing_up: O padrão de projeto VO, ou Value Object, é um padrão de projeto comportamental que descreve a criação de objetos que representam dados simples, como nomes, endereços ou números de telefone. Os VOs são frequentemente usados em sistemas de API para representar dados que precisam ser transferidos entre diferentes componentes do sistema.</p>
 
 <p align="justify"> :page_facing_up: Os VOs são diferentes dos objetos de entidade (POs) em alguns aspectos importantes. Os POs representam entidades do mundo real, como clientes, produtos ou pedidos. Eles geralmente têm comportamentos associados, como criar, atualizar ou excluir. Os VOs, por outro lado, representam apenas dados simples. Eles não têm comportamentos associados e são geralmente usados ​​apenas para transferir dados entre diferentes componentes do sistema.</p>
 
 <p align="justify"> :page_facing_up: Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
 
-#### Referencia de Martin Fowler sobre VO e DTO  
+#### :blue_book: Referencia de Martin Fowler sobre VO e DTO  
+---
 <https://martinfowler.com/eaaCatalog/dataTransferObject.html>
 > *"Quando você trabalha com uma interface remota, como Remote Facade (388), cada chamada para ela é cara. Como resultado, você precisa reduzir o número de chamadas, o que significa que você precisa transferir mais dados a cada chamada. Uma maneira de fazer isso é usar muitos parâmetros. No entanto, muitas vezes isso é difícil de programar - na verdade, muitas vezes é impossível com linguagens como Java, que retornam apenas um único valor."*
 
@@ -254,7 +254,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 
 ### :blue_book: Evolutionary Database Design
-
+---
 <https://www.martinfowler.com/articles/evodb.html>
 
 > <p align="justify"> O design evolutivo de banco de dados (EDBD) é uma abordagem para o design e desenvolvimento de bancos de dados que permite mudanças e adaptações ao longo do tempo. Essa abordagem é contrastante com o design de banco de dados tradicional, que envolve a criação de uma estrutura de banco de dados estática antecipadamente e, em seguida, a implementação dela sem alterações significativas.</p>
@@ -264,7 +264,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > <p align="justify"> O EDBD é uma abordagem flexível e adaptável que pode ser usada para atender às necessidades de uma ampla gama de aplicações. É particularmente adequado para aplicações que estão sujeitas a mudanças frequentes de requisitos, como aplicações de comércio eletrônico e aplicativos móveis.</p>
 
 ### :blue_book: Customizando Serialization (JSON)
-
+---
 > As anotações @JsonPropertyOrder e @JsonProperty são usadas para controlar a forma como os campos de uma classe Java são serializados para JSON.
 
 > A anotação @JsonPropertyOrder especifica a ordem dos campos na saída JSON. A ordem dos campos é especificada como uma matriz de strings, onde cada string é o nome do campo. Por exemplo, a seguinte classe Java:
@@ -314,7 +314,7 @@ private String nome;
 ```
 
 ### :blue_book: Content Negotiation
-
+---
 <p align="justify">  :page_facing_up: API suporta content negotiation, o que significa que ela pode fornecer o resultado em diferentes formatos, como XML, CSV, YAML, e também em diferentes idiomas. Essa capacidade é importante para garantir que a API possa ser consumida por diferentes clientes, independentemente de suas preferências ou restrições.</p>
 
 <p align="justify"> :page_facing_up: Para especificar o formato e o idioma da resposta, o cliente deve enviar o header Accept na requisição HTTP. O servidor, então, usará esse header para determinar o formato e o idioma da resposta.</p>
@@ -345,9 +345,11 @@ Este projeto implementa faster atraves das dependencias maven :
 ```
 
 ### :blue_book: Adcionado Hateoas
+---
 -------------------> explicar depois e detalhar, nesse momento estou sem paciencia para este item.
 
 ### :blue_book: Mockito
+---
 
 > <p align="justify"> Mockito é um framework de teste de código aberto para Java lançado sob a licença MIT. A estrutura permite a criação de objetos duplos de teste em testes de unidade automatizados para fins de desenvolvimento orientado a testes ou desenvolvimento orientado a comportamento. </p>
 > <p align="justify">Ele fornece uma API simples e concisa para criar objetos duplos de teste. Os objetos duplos podem ser usados para simular a interação com outros objetos ou sistemas, permitindo que os testes se concentrem no comportamento da unidade de teste em questão. </p>
