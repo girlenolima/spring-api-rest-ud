@@ -216,6 +216,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 
 > - Facilidade de uso: O HATEOAS torna a API mais fácil de usar fornecendo uma maneira consistente para os clientes navegarem no estado da aplicação. Isso torna mais fácil para os desenvolvedores escrever clientes que consomem a API.
 
+<br>
+
 ### :blue_book: Documentação com Swagger framework
 
 :page_facing_up: O Swagger framework é uma ferramenta que pode ser usada para documentar APIs RESTful. Ele permite que os desenvolvedores criem uma documentação interativa que pode ser usada por desenvolvedores e consumidores da API.
@@ -223,6 +225,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 :page_facing_up: O  framework pode ser usado para documentar APIs RESTful de várias maneiras. Uma maneira é usar a ferramenta Swagger UI. A Swagger UI é uma ferramenta web que pode ser usada para visualizar e testar APIs RESTful documentadas com o Swagger framework.
 
 :page_facing_up: Outra maneira de usar o Swagger framework para documentar APIs RESTful é gerar documentação estática. A documentação estática pode ser usada em sites, wikis ou outros documentos.
+
 <br>
 
 ### :blue_book: Autenticaçao com JWT 
@@ -252,8 +255,8 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 <p align="justify"> :page_facing_up: Os VOs são usados ​​em sistemas de API para uma variedade de propósitos. Eles podem ser usados ​​para representar dados de entrada ou saída de uma API. Eles também podem ser usados ​​para representar dados que precisam ser transferidos entre diferentes componentes do sistema, como o controlador e o serviço.</p>
 <br>
 
-#### :blue_book: Referencia de Martin Fowler sobre VO e DTO  
----
+:page_facing_up: Referencia de Martin Fowler sobre VO e DTO  
+
 <https://martinfowler.com/eaaCatalog/dataTransferObject.html>
 > *"Quando você trabalha com uma interface remota, como Remote Facade (388), cada chamada para ela é cara. Como resultado, você precisa reduzir o número de chamadas, o que significa que você precisa transferir mais dados a cada chamada. Uma maneira de fazer isso é usar muitos parâmetros. No entanto, muitas vezes isso é difícil de programar - na verdade, muitas vezes é impossível com linguagens como Java, que retornam apenas um único valor."*
 
@@ -262,6 +265,7 @@ Nível 3 - HATEOAS (Hypermedia As The Engine Of Application State):
 > *"Embora o principal motivo para usar um objeto de transferência de dados seja agrupar o que seriam várias chamadas remotas em uma única chamada, vale a pena mencionar que outra vantagem é encapsular o mecanismo de serialização para transferência de dados pela rede. Ao encapsular a serialização dessa forma, os DTOs mantêm essa lógica fora do restante do código e também fornecem um ponto claro para alterar a serialização, caso deseje."*
 
 ![vo](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/1e6a8a9f-6b66-4d86-ac00-d2d119377cfb)
+
 <br>
 
 ### :blue_book: Evolutionary Database Design
