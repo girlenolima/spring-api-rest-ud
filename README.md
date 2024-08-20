@@ -4,12 +4,7 @@
 
 
 <div align="center">
-    <h3>Hi 👋, I'm <a href="https://github.com/girlenolima">lENO</a></h3>
- <p align="center">
-        <a href="https://longtao.fun">
-            <img src="cat.webp" width="50"/>
-        </a>
-    </p>
+    <h3> <a>Menu</a></h3>
     <p align="center">
         <a href="https://github.com/girlenolima/spring-api-rest-ud/blob/main/CONCEITOS.md"><span>CONCEITOS</span></a>|
         <a href="https://github.com/girlenolima/spring-api-rest-ud/blob/main/CONCEITOS.md"><span>TECNOLOGIAS</span></a>|
