@@ -275,11 +275,11 @@ https://www.openapis.org/
 
 Um JWT (JSON Web Token) é composto por três partes distintas, separadas por pontos (.). Essas três partes são:
 
-1️⃣: Header: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+1️⃣: Header: ```eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9```
 
-2️⃣: Payload: eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwianRpIjoiMTUxNjIzOTAyMiIsImFkbWluIjp0cnVlfQ
+2️⃣: Payload: ```eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwianRpIjoiMTUxNjIzOTAyMiIsImFkbWluIjp0cnVlfQ```
 
-3️⃣: Signature : SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+3️⃣: Signature : ```SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c```
 
 ```
 Token completo:
