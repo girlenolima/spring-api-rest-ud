@@ -256,10 +256,85 @@ https://www.openapis.org/
 
 <p align="justify"> :page_facing_up: O JWT pode ser assinado usando uma chave secreta ou um par de chaves pública e privada. Se o token for assinado com uma chave secreta, o servidor e o cliente precisam compartilhar a chave secreta. Se o token for assinado com um par de chaves pública e privada, o servidor usa a chave privada para assinar o token e o cliente usa a chave pública para verificar a assinatura. </p>
 
-> Anatomia de um JSON WEB TOKEN (JWT)
+:page_facing_up: Anatomia de um JSON WEB TOKEN (JWT)
+
+| **Passo**                           | **Ação**                                                                                            | **Cliente**                                                                 | **API Server**                                                                                      |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **1. Autenticação Inicial**         | O usuário envia as credenciais para o servidor da API.                                              | Envia credenciais (ex.: nome de usuário e senha).                           | Recebe as credenciais e as valida.                                                                  |
+| **2. Geração do JWT**               | Após a validação das credenciais, o servidor cria o JWT.                                             | -                                                                            | Cria o JWT com informações no Payload (ID do usuário, nome, expiração, etc.) e assina com uma chave secreta. |
+| **3. Envio do JWT para o Cliente**  | O JWT gerado é enviado de volta ao cliente.                                                          | Recebe o JWT do servidor da API.                                             | Envia o JWT ao cliente.                                                                              |
+| **4. Uso do JWT para Acesso a Recursos Protegidos** | O cliente usa o JWT para acessar recursos protegidos na API.                                         | Anexa o JWT ao cabeçalho da requisição HTTP (Authorization: Bearer <token>). | Recebe a requisição com o JWT anexado.                                                               |
+| **5. Verificação do JWT pelo API Server** | O servidor verifica a assinatura do JWT para conceder ou negar o acesso ao recurso solicitado.       | -                                                                            | Verifica a assinatura e a validade do JWT; se for válido, concede acesso ao recurso solicitado.      |
+| **6. Resposta do API Server**       | Se o JWT for válido, o servidor processa a requisição e retorna os dados solicitados.                | Recebe os dados ou a resposta do servidor.                                   | Retorna os dados solicitados ou uma mensagem de erro (ex.: 401 Unauthorized) se o token for inválido. |
+| **7. Renovação do Token**           | Se o JWT expirar, o cliente deve solicitar um novo token ou usar um refresh token, se disponível.     | Solicita um novo JWT ou usa o refresh token (se implementado).               | Gera um novo JWT ou exige nova autenticação.                                                         |
 
 
-![1_2J0lK1r9c04ARTai-DrLQA](https://github.com/girlenolima/spring-api-rest-ud/assets/75032231/021d9ccf-f954-48fc-a139-673d7bb6b48d)
+
+
+:page_facing_up: Passoa a passo
+
+
+```
+POST /login
+{
+  "username": "user@example.com",
+  "password": "password123"
+}
+```
+
+```
+Header: 
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+Payload:
+{
+  "sub": "user_id_123",
+  "name": "John Doe",
+  "exp": 1695030047
+}
+
+Signature: HMACSHA256(
+    base64UrlEncode(header) + "." + base64UrlEncode(payload),
+    "your-256-bit-secret"
+  )
+```
+
+```
+HTTP/1.1 200 OK
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyX2lkXzEyMyIsIm5hbWUiOiJKb2huIERv
+            ZSIsImV4cCI6MTY5NTAzMDA0N30.4fNEVvCl8vcNk6G2s3PIQftUmWT2f0F_Em-V_hw6e-k"
+}
+
+```
+
+```
+GET /protected-resource
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyX2lkXzEyMyIsIm5hb
+WUiOiJKb2huIERvZSIsImV4cCI6MTY5NTAzMDA0N30.4fNEVvCl8vcNk6G2s3PIQftUmWT2f0F_Em-V_hw6e-k
+```
+
+```
+HTTP/1.1 401 Unauthorized
+{
+  "error": "Invalid or expired token"
+}
+
+```
+```
+HTTP/1.1 200 OK
+{
+  "data": "Here is your protected data."
+}
+```
+
+
+
+
+
 
 <br>
 
