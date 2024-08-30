@@ -468,6 +468,7 @@ Este projeto implementa faster atraves das dependencias maven :
 <br>
 
 ### :blue_book: Adcionado Hateoas
+---
 
 <p align="justify"> :page_facing_up: HATEOAS (Hypermedia As The Engine Of Application State) é um conceito utilizado em arquiteturas RESTful. Ele define uma forma de interação onde o cliente de uma API não precisa saber previamente como navegar entre os recursos, pois todas as informações necessárias para essa navegação são fornecidas pela própria API.</p>
 
@@ -498,5 +499,5 @@ Cada açao é representada por um link na resposta JSON, o que permite ao client
 ### :blue_book: Mockito
 ---
 
-> <p align="justify"> Mockito é um framework de teste de código aberto para Java lançado sob a licença MIT. A estrutura permite a criação de objetos duplos de teste em testes de unidade automatizados para fins de desenvolvimento orientado a testes ou desenvolvimento orientado a comportamento. </p>
-> <p align="justify">Ele fornece uma API simples e concisa para criar objetos duplos de teste. Os objetos duplos podem ser usados para simular a interação com outros objetos ou sistemas, permitindo que os testes se concentrem no comportamento da unidade de teste em questão. </p>
+<p align="justify"> :page_facing_up: Mockito é um framework de teste de código aberto para Java lançado sob a licença MIT. A estrutura permite a criação de objetos duplos de teste em testes de unidade automatizados para fins de desenvolvimento orientado a testes ou desenvolvimento orientado a comportamento. </p>
+<p align="justify"> :page_facing_up: Ele fornece uma API simples e concisa para criar objetos duplos de teste. Os objetos duplos podem ser usados para simular a interação com outros objetos ou sistemas, permitindo que os testes se concentrem no comportamento da unidade de teste em questão. </p>
