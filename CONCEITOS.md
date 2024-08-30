@@ -468,8 +468,31 @@ Este projeto implementa faster atraves das dependencias maven :
 <br>
 
 ### :blue_book: Adcionado Hateoas
----
--------------------> explicar depois e detalhar, nesse momento estou sem paciencia para este item.
+
+<p align="justify"> HATEOAS (Hypermedia As The Engine Of Application State) é um conceito utilizado em arquiteturas RESTful. Ele define uma forma de interação onde o cliente de uma API não precisa saber previamente como navegar entre os recursos, pois todas as informações necessárias para essa navegação são fornecidas pela própria API.</p>
+
+<p align="justify">Quando um cliente faz uma requisição a um recurso, a resposta não apenas contém os dados solicitados, mas também links (hipermídia) que indicam ações possíveis a serem tomadas a partir daquele recurso. Esses links permitem que o cliente interaja com outros recursos relacionados, altere o estado da aplicação ou realize operações adicionais, sem precisar conhecer a estrutura interna da API..</p>
+
+Cada açao é representada por um link na resposta JSON, o que permite ao cliente navegar pela API de maneira dinâmica.
+
+```
+{
+  "orderId": "12345",
+  "status": "shipped",
+  "items": [
+    {"productId": "567", "quantity": 1},
+    {"productId": "789", "quantity": 2}
+  ],
+  "_links": {
+    "self": {"href": "/orders/12345"},
+    "cancel": {"href": "/orders/12345/cancel"},
+    "items": {"href": "/orders/12345/items"},
+    "history": {"href": "/orders/12345/history"}
+  }
+}
+
+```
+
 <br>
 
 ### :blue_book: Mockito
