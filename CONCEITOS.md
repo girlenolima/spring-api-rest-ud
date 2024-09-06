@@ -467,7 +467,7 @@ Este projeto implementa faster atraves das dependencias maven :
 ```
 <br>
 
-### :blue_book: Adcionado Hateoas
+### :blue_book: Hateoas
 ---
 
 <p align="justify"> :page_facing_up: HATEOAS (Hypermedia As The Engine Of Application State) é um conceito utilizado em arquiteturas RESTful. Ele define uma forma de interação onde o cliente de uma API não precisa saber previamente como navegar entre os recursos, pois todas as informações necessárias para essa navegação são fornecidas pela própria API.</p>
